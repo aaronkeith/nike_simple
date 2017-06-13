@@ -6,17 +6,27 @@ body {
   background-color: #1a1a1a;
 }
 
-.container #main {
-  background: #1a1a1a;
-}
-
 #myCarousel {
   margin-top: 60px;
 }
 
-/* --------------------------------------
-Media Queries
--------------------------------------- */
+#carouselTag {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+#carouselTag > a {
+  color: #333;
+  margin: 5px 3px;
+  font-size: 14px;
+}
+
+#carouselTag > a:hover {
+  color: #83fe00;
+  text-decoration: none;
+}
+/* ---Media Queries------ */
 
 @media (max-width: 549px) {
   #myCarousel .item { height: 310px; }

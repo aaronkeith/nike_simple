@@ -10,6 +10,10 @@ body {
   margin-top: 60px;
 }
 
+.carousel-position {
+  background: top center no-repeat;
+}
+
 #carouselTag {
   text-align: center;
   margin: 0 auto;
@@ -28,40 +32,48 @@ body {
 }
 /* ---Media Queries------ */
 
-@media (max-width: 549px) {
+@media (max-width: 635px) {
   #myCarousel .item { height: 310px; }
 
   #slide1 {
-    background: url('images/carousel_xsmall_01_run_opt.png') top center no-repeat;
+    background-image: url('images/carousel_xsmall_01_run_opt.png');
   }
 
   #slide2 {
-    background: url('images/carousel_xsmall_02_skate_opt.png') top center no-repeat;
+    background-image: url('images/carousel_xsmall_02_skate_opt.png');
   }
 
   #slide3 {
-    background: url('images/carousel_xsmall_03_basketball_opt.png') top center no-repeat;
+    background-image: url('images/carousel_xsmall_03_basketball_opt.png');
   }
 
   a.carousel-control {
     display: none;
   }
+
+  #myCarousel {
+    margin-top: 5px;
+  }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 636px) {
 
   #myCarousel .item { height: 310px; }
 
   #slide1 {
-    background: url('images/carousel_small_01_run_opt.png') top center no-repeat;
+    background: url('images/carousel_small_01_run_opt.png');
   }
 
   #slide2 {
-    background: url('images/carousel_small_02_skate_opt.png') top center no-repeat;
+    background: url('images/carousel_small_02_skate_opt.png');
   }
 
   #slide3 {
-    background: url('images/carousel_small_03_basketball_opt.png') top center no-repeat;
+    background: url('images/carousel_small_03_basketball_opt.png');
+  }
+
+  #myCarousel {
+    margin-top: 15px;
   }
 }
 
@@ -70,15 +82,15 @@ body {
   #myCarousel .item { height: 400px; }
 
   #slide1 {
-    background: url('images/carousel_medium_01_run_opt.png') top center no-repeat;
+    background: url('images/carousel_medium_01_run_opt.png');
   }
 
   #slide2 {
-    background: url('images/carousel_medium_02_skate_opt.png') top center no-repeat;
+    background: url('images/carousel_medium_02_skate_opt.png');
   }
 
   #slide3 {
-    background: url('images/carousel_medium_03_basketball_opt.png') top center no-repeat;
+    background: url('images/carousel_medium_03_basketball_opt.png');
   }
 }
 
@@ -87,14 +99,14 @@ body {
   #myCarousel .item { height: 500px; }
 
   #slide1 {
-    background: url('images/carousel_large_01_run_opt.png') top center no-repeat;
+    background: url('images/carousel_large_01_run_opt.png');
   }
 
   #slide2 {
-    background: url('images/carousel_large_02_skate_opt.png') top center no-repeat;
+    background: url('images/carousel_large_02_skate_opt.png');
   }
 
   #slide3 {
-    background: url('images/carousel_large_03_basketball_opt.png') top center no-repeat;
+    background: url('images/carousel_large_03_basketball_opt.png');
   }
 }

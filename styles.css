@@ -196,6 +196,19 @@ body {
 }
 
 /* ---Gallery --- */
+.gallery-title {
+  font-family: 'Poppins';
+  font-size: 21px;
+  font-weight: 500;
+  color: #eee;
+  margin-top: 80px;
+}
+
+.gallery-shoe-qty {
+  color: #444;
+  font-weight: 300;
+  font-size: 16px;
+}
 
 .container .row #gallery-main {
   display: flex;
@@ -209,13 +222,17 @@ body {
 .container .row #gallery-items {
   justify-content: center;
   /*flex-shrink: 2;*/
-  border: 2px dashed #5fb2a7;
+  /*border: 2px dashed #5fb2a7;*/
 }
 
 .gallery-item-box {
   justify-content: center;
-  border: 2px dashed #f800ff;
+  border: none;
   padding: 10px;
+}
+
+.gallery-item-box:hover {
+  border: 2px solid #333;
 }
 
 .gallery-item-box {

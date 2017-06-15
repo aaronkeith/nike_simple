@@ -215,4 +215,27 @@ body {
 .gallery-item-box {
   justify-content: center;
   border: 2px dashed #f800ff;
+  padding: 10px;
+}
+
+.gallery-item-box {
+  display: flex;
+}
+
+.gallery-item-info hr {
+  margin-top: 1px;
+  margin-bottom: 6px;
+}
+
+.gallery-colors-display {
+  font-family: 'Roboto';
+  margin-top: 3px;
+  margin-bottom: 1px;
+  color: #666;
+  padding: 3px;
+}
+
+.gallery-product-name p {
+  margin: 0 0 1px;
+  color: #ccc;
 }

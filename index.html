@@ -48,7 +48,7 @@
 
     </div><!-- end myCarousel -->
 
-    <div id="carouselTag">
+    <div class="row" id="carouselTag">
       <a href=""><span>RUN</span></a>
       <span>|</span>
       <a href=""><span>SKATE</span></a>
@@ -57,17 +57,32 @@
 
     </div><!-- end carouselTag -->
 
-    <div class="static-images">
-      <div id="static-caption">
+    <div class="static-images row">
+      <div id="static-caption" class="col-xs-12">
         <img class="img-responsive" src="images/just-do-it_gray.png" alt="just do it">
-        <p>What are you going to do today?</p>
+        <p>what are you doing today?</p>
       </div>
-      <div class="static-content">
-        <a href="http:// run gallery"><img class="img-responsive" id="static-run" src="images/static_bw_bar_run.png" onmouseover="this.src='images/static_bw_bar_run_hover.png'"onmouseout="this.src='images/static_bw_bar_run.png'" alt="run"></a>
-        <a href="http:// skate gallery"><img class="img-responsive" id="static-skate" src="images/static_bw_bar_skate.png" onmouseover="this.src='images/static_bw_bar_skate_hover.png'"onmouseout="this.src='images/static_bw_bar_skate.png'" alt="skate"></a>
-        <a href="http:// skate gallery"><img class="img-responsive" id="static-ball" src="images/static_bw_bar_ball.png" onmouseover="this.src='images/static_bw_bar_ball_hover.png'"onmouseout="this.src='images/static_bw_bar_ball.png'" alt="ball"></a>
-      </div>
-    </div><!-- end static images -->
+    </div>
+
+    <div class="static-content row">
+      <div class="col-xs-12">
+        <div id="static-run">
+          <img class="img-responsive static-top" src="images/static_bw_bar_run_hover.png" alt="run">
+          <img class="img-responsive static-bottom" src="images/static_bw_bar_run.png" alt="run">
+        </div>
+
+        <div id="static-skate">
+          <img class="img-responsive static-top" src="images/static_bw_bar_skate_hover.png" alt="skate">
+          <img class="img-responsive static-bottom" src="images/static_bw_bar_skate.png" alt="skate">
+        </div>
+
+        <div id="static-ball">
+          <img class="img-responsive static-top" src="images/static_bw_bar_ball_hover.png" alt="ball">
+          <img class="img-responsive static-bottom" src="images/static_bw_bar_ball.png" alt="ball">
+        </div>
+      </div><!-- end col- -->
+    </div><!-- end static content row -->
+
 
   </div><!-- end container main -->
 

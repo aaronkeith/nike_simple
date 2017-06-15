@@ -80,7 +80,7 @@ body {
 
 /* ---Media Queries------ */
 
-@media (max-width: 635px) {
+@media (max-width: 480px) {
   #myCarousel .item { height: 310px; }
 
   #slide1 {
@@ -140,7 +140,7 @@ body {
   }
 }
 
-@media (min-width: 636px) {
+@media (min-width: 481px) {
 
   #myCarousel .item { height: 310px; }
 

@@ -7,7 +7,7 @@ body {
   height: 150vh;
 }
 
-#myCarousel {
+#my-carousel {
   margin-top: 60px;
 }
 
@@ -15,19 +15,19 @@ body {
   background: top center no-repeat;
 }
 
-#carouselTag {
+#carousel-tag {
   text-align: center;
   margin: 0 auto;
   margin-top: 5px;
 }
 
-#carouselTag > a {
+#carousel-tag > a {
   color: #333;
   margin: 5px 3px;
   font-size: 14px;
 }
 
-#carouselTag > a:hover {
+#carousel-tag > a:hover {
   color: #83fe00;
   text-decoration: none;
 }
@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 480px) {
 
-  #myCarousel .item { height: 310px; }
+  #my-carousel .item { height: 310px; }
 
   #slide1 {
     background-image: url('images/carousel_xsmall_01_run_opt.png');
@@ -101,11 +101,11 @@ body {
     display: none;
   }
 
-  #myCarousel {
+  #my-carousel {
     margin-top: 5px;
   }
 
-  #carouselTag > a {
+  #carousel-tag > a {
     color: #333;
     margin: 3px 1px;
     font-size: 12px;
@@ -144,7 +144,7 @@ body {
 
 @media (min-width: 481px) {
 
-  #myCarousel .item { height: 310px; }
+  #my-carousel .item { height: 310px; }
 
   #slide1 {
     background: url('images/carousel_small_01_run_opt.png');
@@ -158,13 +158,13 @@ body {
     background: url('images/carousel_small_03_basketball_opt.png');
   }
 
-  #myCarousel {
+  #my-carousel {
     margin-top: 15px;
   }
 }
 
 @media (min-width: 992px) {
-  #myCarousel .item { height: 400px; }
+  #my-carousel .item { height: 400px; }
 
   #slide1 {
     background: url('images/carousel_medium_01_run_opt.png');
@@ -180,7 +180,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  #myCarousel .item { height: 500px; }
+  #my-carousel .item { height: 500px; }
 
   #slide1 {
     background: url('images/carousel_large_01_run_opt.png');

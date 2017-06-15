@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
 </head>
 <body>
 
@@ -47,15 +48,43 @@
 
     </div><!-- end myCarousel -->
 
-    <div id="carouselTag">
+    <div class="row" id="carouselTag">
       <a href=""><span>RUN</span></a>
       <span>|</span>
       <a href=""><span>SKATE</span></a>
       <span>|</span>
       <a href=""><span>BALL</span></a>
+
+    </div><!-- end carouselTag -->
+
+    <div class="static-images row">
+      <div id="static-caption" class="col-xs-12">
+        <img class="img-responsive" src="images/just-do-it_gray.png" alt="just do it">
+        <p>what are you doing today?</p>
+      </div>
     </div>
 
-  </div>
+    <div class="static-content row">
+      <div class="col-xs-12">
+        <div id="static-run">
+          <a href="#run_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_run_hover2.png" alt="run"></a>
+          <a href="#run_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_run.png" alt="run"></a>
+        </div>
+
+        <div id="static-skate">
+          <a href="#skate_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_skate_hover2.png" alt="skate"></a>
+          <a href="#skate_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_skate.png" alt="skate"></a>
+        </div>
+
+        <div id="static-ball">
+          <a href="#ball_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_ball_hover2.png" alt="ball"></a>
+          <a href="#ball_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_ball.png" alt="ball"></a>
+        </div>
+      </div><!-- end col- -->
+    </div><!-- end static content row -->
+
+
+  </div><!-- end container main -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>

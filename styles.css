@@ -40,7 +40,7 @@ body {
   width: 40%;
 }
 
-.container .static-images {
+.static-images {
   padding: 0;
   margin: 0 auto;
 }
@@ -78,7 +78,6 @@ body {
   opacity: 1;
 }
 
-
 /* ---Media Queries------ */
 
 @media (max-width: 635px) {
@@ -104,9 +103,39 @@ body {
     margin-top: 5px;
   }
 
+  #carouselTag > a {
+    color: #333;
+    margin: 3px 1px;
+    font-size: 12px;
+  }
+
+  #static-caption > p {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  #static-run,
+  #static-skate,
+  #static-ball {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .static-content .img-responsive {
-    display: flex;
-    width: 60%;
+    display: inline-block;
+    width: 100%;
+    margin: 3px auto;
+  }
+
+  .static-images .col-xs-12 {
+    height: 60px;
+    margin: 3px;
+  }
+
+  #static-caption {
     margin: 3px auto;
   }
 }

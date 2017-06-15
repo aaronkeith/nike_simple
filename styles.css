@@ -4,6 +4,7 @@
 
 body {
   background-color: #1a1a1a;
+  height: 150vh;
 }
 
 #my-carousel {
@@ -81,6 +82,7 @@ body {
 /* ---Media Queries------ */
 
 @media (max-width: 480px) {
+
   #my-carousel .item { height: 310px; }
 
   #slide1 {
@@ -103,7 +105,7 @@ body {
     margin-top: 5px;
   }
 
-  #carouselTag > a {
+  #carousel-tag > a {
     color: #333;
     margin: 3px 1px;
     font-size: 12px;
@@ -207,7 +209,7 @@ body {
 .container .row #gallery-items {
   justify-content: center;
   /*flex-shrink: 2;*/
-  border: 2px dashed #5Fb2a7;
+  border: 2px dashed #5fb2a7;
 }
 
 .gallery-item-box {

@@ -81,6 +81,7 @@ body {
 /* ---Media Queries------ */
 
 @media (max-width: 480px) {
+
   #myCarousel .item { height: 310px; }
 
   #slide1 {

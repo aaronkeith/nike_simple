@@ -164,6 +164,7 @@ body {
 }
 
 @media (min-width: 992px) {
+  
   #my-carousel .item { height: 400px; }
 
   #slide1 {
@@ -180,6 +181,7 @@ body {
 }
 
 @media (min-width: 1200px) {
+
   #my-carousel .item { height: 500px; }
 
   #slide1 {

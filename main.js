@@ -1,18 +1,18 @@
-var shoeInventory [
+var shoeInventory = [
   {
     brand: 'NIKE',
     style: 'AIR MAX 2017',
-    category: 'RUNNING',
+    category: 'RUN',
     price: 190,
     styleNumber: '849559-001',
     color: 'Black/Anthracite/White',
-    numberColors: 3;
+    numberColors: 3,
     sex: 'MEN',
     shoeImage: 'images/RUN/RUN NIKE AIR MAX 2017 MEN\'S RUNNING SHOE $190 Style: 849559-001 Black Anthracite White.jpg'},
   {
     brand: 'NIKE',
     style: 'AIR MAX SEQUENT 2',
-    category: 'RUNNING',
+    category: 'RUN',
     price: 120,
     styleNumber: '852461-001',
     color: 'Black/Dark Grey/Wolf Grey/Metallic/Hematite',
@@ -23,7 +23,7 @@ var shoeInventory [
   {
     brand: 'NIKE',
     style: 'AIR ZOOM ELITE 8',
-    category: 'RUNNING',
+    category: 'RUN',
     price: 115,
     styleNumber: '748588-001',
     color: 'Black/Wolf Grey/Dark Grey/White',
@@ -34,7 +34,7 @@ var shoeInventory [
   {
     brand: 'NIKE',
     style: 'AIR ZOOM PEGASUS 34',
-    category: 'RUNNING',
+    category: 'RUN',
     price: 110,
     styleNumber: '880555-403',
     color: 'Blue-Fox/Crimson/White/Black',
@@ -89,7 +89,7 @@ var shoeInventory [
     {
       brand: 'NIKE',
       style: 'JORDAN SUPER FLY 5 PO',
-      category: 'BALL;',
+      category: 'BALL',
       price: 140,
       styleNumber: '881571-110',
       color: 'White/White/Black',
@@ -100,7 +100,7 @@ var shoeInventory [
     {
       brand: 'NIKE',
       style: 'KOBE A.D. NXT',
-      category: 'BALL;',
+      category: 'BALL',
       price: 200,
       styleNumber: '916832-710',
       color: 'Volt/White/White',
@@ -111,7 +111,7 @@ var shoeInventory [
     {
       brand: 'NIKE',
       style: 'LEBRON XIV AGIMAT',
-      category: 'BALL;',
+      category: 'BALL',
       price: 175,
       styleNumber: '852402-400',
       color: 'Coastal Blue/Star Blue/White',
@@ -122,7 +122,7 @@ var shoeInventory [
     {
       brand: 'NIKE',
       style: 'KYRIE 2 iD',
-      category: 'BALL;',
+      category: 'BALL',
       price: 200,
       styleNumber: '852402-666',
       color: 'Black/Pure Gold/White',
@@ -131,3 +131,10 @@ var shoeInventory [
       shoeImage: 'images/BALL/BALL NIKE KYRIE 2 iD_Black Gold White .jpg'
     },
 ]
+
+function extractByCategory(category, shoes) {
+  var categoryMatch = shoes.filter (function (shoe){
+    return shoe.category === category
+  })
+  return categoryMatch
+}

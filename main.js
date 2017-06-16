@@ -132,6 +132,24 @@ var shoeInventory = [
     },
   ]
 
+  // function extractByCategory () {
+  //   var runInventory = []
+  //   var skateInventory = []
+  //   var ballInventory = []
+  //   shoeInventory.forEach(function(shoe) {
+  //     if (shoe.category === 'RUN') {
+  //       runInventory.push(shoe)
+  //     } else if (shoe.category === 'SKATE') {
+  //       skateInventory.push(shoe)
+  //     } else if (shoe.category === 'BALL') {
+  //       ballInventory.push(shoe)
+  //     } else {
+  //       // console.log('nada');
+  //     }
+  //   })
+  //   return { runInventory, skateInventory, ballInventory }
+  //   }
+
   function extractByCategory(category, shoes) {
     var categoryMatch = shoes.filter (function (shoe){
       return shoe.category === category
@@ -139,45 +157,89 @@ var shoeInventory = [
     return categoryMatch
   }
 
+  //loop for renderShoe function() *****not working****
+    // for (var i = 0; i < sneaker.length; i++) {
+    //   var sneaker = renderPost(sneaker[i])
+    //   document.body.appendChild(sneaker)
+    // }
 
-function renderShoes(category, sneaker) {
+  function renderShoe(shoeData) {
+    var $shoe = document.createElement('div')
+    $shoe.classList.add('gallery-item-box')
+    $shoe.classList.add('col-xs-6')
+    $shoe.classList.add('col-md-3')
+    $shoe.classList.add('col-sm-3')
 
-  var $style = document.getElementsByClassName('gallery-product-display-name')
-  var $shoeImage = document.getElementsByClassName('shoe-thumb')
-  var $colors = document.getElementsByClassName('gallery-colors-display')
-  var $category = document.getElementsByClassName('gallery-product-subtitle')
-  var $price = document.getElementsByClassName('gallery-price')
+    var $content = document.createElement('div')
+    $content.classList.add('gallery-item-content')
 
-  var renderShoe = sneaker.filter(function(shoe) {
-    return $style.textContent === shoe.style
-    return $shoeImage.textContent === shoe.shoeImage
-    return $colors.textContent === shoe.numberColors
-    return $category.textContent === shoe.category
-    return $price.textContent === '$' + shoe.price
-  })
-  return renderShoe
-}
+    var $image = document.createElement('div')
+    $image.classList.add('gallery-item-image')
+
+    var $imageWrapper = document.createElement('div')
+    $imageWrapper.classList.add('galley-item-image-wrapper')
+
+    var $productImage = document.createElement('img')
+    $productImage.setAttribute('src', shoeData.shoeImage)
+
+    $shoe.appendChild($content)
+    $content.appendChild($image)
+    $image.appendChild($imageWrapper)
+    $imageWrapper.appendChild($productImage)
+
+  //****end image box*****///
+
+    var $itemInfo = document.createElement('div')
+    $itemInfo.classList.add('gallery-item-info')
+
+    var $numColors = document.createElement('div')
+    $numColors.classList.add('gallery-number-colors')
+
+    var $colorDisplay = document.createElement('p')
+    $colorDisplay.classList.add('gallery-colors-display')
+
+    var $hr = document.createElement('hr')
+    $hr.classList.add('color-break')
+
+    $itemInfo.appendChild($numColors)
+    $numColors.appendChild($colorDisplay)
+    $itemInfo.appendChild($hr)
+
+    //****end colors break*****///
+
+    var $productName = document.createElement('div')
+    $productName.classList.add('gallery-product-name')
+
+    var $productDisplayName = document.createElement('p')
+    $productDisplayName.classList.add('gallery-product-display-name')
+
+    var $productCategoryDisplay = document.createElement('p')
+    $productCategoryDisplay.classList.add('gallery-product-category')
+
+    var $productPrice = document.createElement('div')
+    $productPrice.classList.add('gallery-product-price')
+
+    var $priceDisplay = document.createElement('div')
+    $priceDisplay.classList.add('gallery-product-price-display')
+
+    var $price = document.createElement('p')
+    $price.classList.add('gallery-price')
+
+    $itemInfo.appendChild($productName)
+    $productName.appendChild($productDisplayName)
+    $productDisplayName.appendChild($productCategoryDisplay)
+    $productCategoryDisplay.appendChild($productPrice)
+    $productPrice.appendChild($priceDisplay)
+    $priceDisplay.appendChild($price)
+
+    //****end product details*****///
+
+    $shoe.appendChild($itemInfo)
+    $shoe.appendChild($productName)
 
 
-//
-//   var $colors = document.createElement('p')
-//   $colors.textContent = sneaker.price
-//
-//   var $category = document.createElement('p')
-//   $category.textContent = sneaker.category
-//
-//   var $price = document.createElement('p')
-//   $price.textContent = '$' + sneaker.price
-//
-//   $sneaker.appendChild($shoeImage)
-//   $sneaker.appendChild($colors)
-//   $sneaker.appendChild($category)
-//   $sneaker.appendChild($price)
-//
-//   return $sneaker
-// }
-//
-// for (var i = 0; i < sneaker.length; i++) {
-//   var sneaker = renderPost(sneaker[i])
-//   document.body.appendChild(sneaker)
-// }
+
+
+
+    return $shoe
+  }

@@ -251,8 +251,8 @@ body {
   color: #666;
   padding: 3px;
 }
-
 .gallery-product-name {
+
   margin: 0 0 1px;
   color: #ccc;
   margin-bottom: 0;
@@ -264,7 +264,7 @@ body {
   margin-bottom: 0.3rem;
 }
 
-.gallery-product-subtitle {
+.gallery-product-category {
   font-variant-caps: all-small-caps;
   color: #aaa;
   margin-bottom: 0.3rem;

@@ -158,10 +158,10 @@ var shoeInventory = [
   }
 
   //loop for renderShoe function() *****not working****
-    // for (var i = 0; i < sneaker.length; i++) {
-    //   var sneaker = renderPost(sneaker[i])
-    //   document.body.appendChild(sneaker)
-    // }
+  // for (var i = 0; i < sneaker.length; i++) {
+  //   var sneaker = renderPost(sneaker[i])
+  //   document.body.appendChild(sneaker)
+  // }
 
   function renderShoe(shoeData) {
     var $shoe = document.createElement('div')
@@ -187,7 +187,7 @@ var shoeInventory = [
     $image.appendChild($imageWrapper)
     $imageWrapper.appendChild($productImage)
 
-  //****end image box*****///
+    //****end image box*****///
 
     var $itemInfo = document.createElement('div')
     $itemInfo.classList.add('gallery-item-info')
@@ -236,10 +236,6 @@ var shoeInventory = [
 
     $shoe.appendChild($itemInfo)
     $shoe.appendChild($productName)
-
-
-
-
 
     return $shoe
   }

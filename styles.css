@@ -198,7 +198,7 @@ body {
 /* ---Gallery --- */
 .gallery-title {
   font-family: 'Poppins';
-  font-size: 21px;
+  font-size: 2rem;
   font-weight: 500;
   color: #eee;
   margin-top: 80px;
@@ -252,7 +252,21 @@ body {
   padding: 3px;
 }
 
-.gallery-product-name p {
+.gallery-product-name {
   margin: 0 0 1px;
   color: #ccc;
+  margin-bottom: 0;
+}
+
+.gallery-product-display-name {
+  font-size: 1.6rem;
+  font-variant-caps: small-caps;
+  margin-bottom: 0.3rem;
+}
+
+.gallery-product-subtitle {
+  font-variant-caps: all-small-caps;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
 }

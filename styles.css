@@ -212,34 +212,35 @@ body {
   justify-content: flex-start;
   font-family: 'Poppins';
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #eee;
   margin-top: 80px;
 }
 
+.gallery-shoe-qty {
+  margin-left: 0.4rem;
+  font-weight: 300;
+  font-family: 'Poppins';
+}
+
 .container .row #gallery-items {
   justify-content: center;
-  /*flex-shrink: 2;*/
-  /*border: 2px dashed #5fb2a7;*/
 }
 
 .gallery-item-box {
-  /*display: flex;*/
-  /*justify-content: center;*/
   border: none;
   padding: 10px;
-  /*border: 2px dashed #3ff1a7;*/
 }
 
 .gallery-item-box:hover {
   border: 2px solid #333;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .shoe-thumb {
   margin: 0 auto;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 
 hr.color-break {
@@ -259,7 +260,6 @@ hr.color-break {
 .gallery-product-name {
   margin: 0 0 1px;
   color: #ccc;
-  /*margin-bottom: 0;*/
 }
 
 .gallery-product-display-name {
@@ -273,4 +273,63 @@ hr.color-break {
   color: #aaa;
   margin-bottom: 0.3rem;
   font-size: 1.5rem;
+}
+
+/* ---Detail View --- */
+#detail-view {
+  height: 700px;
+}
+
+#detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#detail-main {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper-detail {
+  display: flex;
+}
+
+#detail-view {
+  display: flex;
+  margin: 100px, auto;
+}
+
+#atc-button {
+  justify-content: center;
+}
+
+.add-cart {
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  padding: 0;
+margin: 5px, auto;
+}
+
+.md {
+  width: 60%;
+}
+
+.atc {
+  background-color: #f07444;
+  color: #ddd;
+  transition: 0.2s ease;
+}
+
+.atc:hover {
+  background-color: #ee622c;
+  transition: 0.2s ease;
 }

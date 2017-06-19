@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Swoosh Shop</title>
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
 </head>
+
 <body>
 
   <div class="container" id="main">
@@ -46,7 +48,8 @@
       <a class="left carousel-control" data-slide="prev" href="#my-carousel"><span class="icon-prev"></span></a>
       <a class="right carousel-control" data-slide="next" href="#my-carousel"><span class="icon-next"></span></a>
 
-    </div><!-- end my-carousel -->
+    </div>
+    <!-- end my-carousel -->
 
     <div class="row" id="carousel-tag">
       <a href=""><span>RUN</span></a>
@@ -54,7 +57,8 @@
       <a href=""><span>SKATE</span></a>
       <span>|</span>
       <a href=""><span>BALL</span></a>
-    </div><!-- end carouselTag -->
+    </div>
+    <!-- end carouselTag -->
 
     <div class="static-images row">
       <div id="static-caption" class="col-xs-12">
@@ -80,25 +84,56 @@
           <a href="#ball_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_ball.png" alt="ball"></a>
         </div>
 
-      </div><!-- end col-xs-12 -->
-    </div><!-- end static-content row -->
+      </div>
+      <!-- end col-xs-12 -->
+    </div>
+    <!-- end static-content row -->
 
     <div class="container row gallery-main" id="gallery-main">
 
-        <div class="gallery-title-bar col-xs-12">
-          <span class="gallery-title"></span>
-          <span class="gallery-shoe-qty"></span>
-        </div><!-- end gallery-title-bar col -->
-
+      <div class="gallery-title-bar col-xs-12">
+        <span class="gallery-title">RUNNING SHOES</span>
+        <span class="gallery-shoe-qty">(37)</span>
+      </div>
+      <!-- end gallery-title-bar col -->
 
       <div class="container row" id="gallery-items">
 
-
       </div><!-- end cotainer row #gallery-items -->
 
-    </div><!-- end container row #gallery-main -->
+      <div class="container row" id="detail-view">
+        <div class="wrapper-image col-xs-6">
+          <div id="detail-image">
+            <img class="img-responsive" id="detail-main" src="images/RUN/RUN NIKE ZOOM STREAK 6 UNISEX RACING SHOE $110 Style: 831413-400 Legion-Blue Rage-Green White.jpeg" alt="xxx">
+          </div>
+        </div><!-- end wrapper-image -->
+        <div class="wrapper-detail col-xs-6">
+          <div id="detail-detail">
+            <h1 id="detail-header">shoeInventory.style</h1>
+            <h3 id="detail-category">shoeInventory.category</h3>
+            <div id="detail-price"><span>$ + shoeInventory.price</span></div>
+            <div id="color-style">
+              <span>shoeInventory.color</span>
+              <span>shoeInventory.styleNumber</span>
+            </div>
+            <div id="detail-shoe-thumb">
+              <img src="#" alt="">
+              <img src="#" alt="">
+              <img src="#" alt=""/>
+            </div>
+            <div class="add-cart">
+            <button type="submit" class="btn md atc" id="atc-button" name="add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </div><!-- end container main -->
+    </div>
+    <!-- end container row #gallery-main -->
+
+  </div>
+  <!-- end container main -->
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -106,4 +141,5 @@
   <!-- <script src="nikeSnadbox.js" charset="utf-8"></script> -->
   <script src="main.js" charset="utf-8"></script>
 </body>
+
 </html>

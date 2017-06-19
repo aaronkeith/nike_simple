@@ -196,13 +196,6 @@ body {
 }
 
 /* ---Gallery --- */
-.gallery-title {
-  font-family: 'Poppins';
-  font-size: 2rem;
-  font-weight: 500;
-  color: #eee;
-  margin-top: 80px;
-}
 
 .gallery-shoe-qty {
   color: #444;
@@ -217,6 +210,11 @@ body {
 .gallery-title-bar {
   display: block;
   justify-content: flex-start;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+  margin-top: 80px;
 }
 
 .container .row #gallery-items {
@@ -226,22 +224,28 @@ body {
 }
 
 .gallery-item-box {
-  justify-content: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
   border: none;
   padding: 10px;
+  /*border: 2px dashed #3ff1a7;*/
 }
 
 .gallery-item-box:hover {
   border: 2px solid #333;
+  border-radius: 5px;
 }
 
-.gallery-item-box {
-  display: flex;
+.shoe-thumb {
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }
 
-.gallery-item-info hr {
-  margin-top: 1px;
-  margin-bottom: 6px;
+hr.color-break {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  width: 100%;
 }
 
 .gallery-colors-display {
@@ -251,16 +255,16 @@ body {
   color: #666;
   padding: 3px;
 }
-.gallery-product-name {
 
+.gallery-product-name {
   margin: 0 0 1px;
   color: #ccc;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 .gallery-product-display-name {
-  font-size: 1.6rem;
-  font-variant-caps: small-caps;
+  font-size: 1.5rem;
+  font-variant-caps: petite-caps;
   margin-bottom: 0.3rem;
 }
 

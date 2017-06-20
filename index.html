@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Swoosh Shop</title>
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
 </head>
+
 <body>
 
   <div class="container" id="main">
@@ -43,18 +45,20 @@
         </div>
       </div>
 
-
       <a class="left carousel-control" data-slide="prev" href="#my-carousel"><span class="icon-prev"></span></a>
       <a class="right carousel-control" data-slide="next" href="#my-carousel"><span class="icon-next"></span></a>
 
-    <div class="row" id="carousel-tag">
+    </div>
+    <!-- end my-carousel -->
 
-      <a href=""><span>RUN</span></a>
+    <div class="row" id="carousel-tag">
+      <a id="run-carousel-tag" href=""><span>RUN</span></a>
       <span>|</span>
-      <a href=""><span>SKATE</span></a>
+      <a href=""><span id="skate-carousel-tag">SKATE</span></a>
       <span>|</span>
-      <a href=""><span>BALL</span></a>
-    </div><!-- end carouselTag -->
+      <a id="ball-carousel-tag" href=""><span >BALL</span></a>
+    </div>
+    <!-- end carouselTag -->
 
     <div class="static-images row">
       <div id="static-caption" class="col-xs-12">
@@ -68,27 +72,40 @@
         <div id="static-run">
           <a href="#run_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_run_hover2.png" alt="run"></a>
           <a href="#run_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_run.png" alt="run"></a>
+          <p>shopRUN</p>
         </div>
 
         <div id="static-skate">
           <a href="#skate_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_skate_hover2.png" alt="skate"></a>
           <a href="#skate_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_skate.png" alt="skate"></a>
+          <p>shopSKATE</p>
         </div>
 
         <div id="static-ball">
           <a href="#ball_gallery"><img class="img-responsive static-top" src="images/static_bw_bar_ball_hover2.png" alt="ball"></a>
           <a href="#ball_gallery"><img class="img-responsive static-bottom" src="images/static_bw_bar_ball.png" alt="ball"></a>
+          <p>shopBALL</p>
         </div>
-        
-      </div><!-- end col-xs-12 -->
 
-    </div><!-- end static content row -->
+      </div>
 
-  </div><!-- end container main -->
+    </div><!-- end static-content row -->
+
+    <div class="container row gallery-main" id="gallery-main">
+
+      <div class="container row" id="gallery-items">
+
+      </div>
+
+    </div>
+
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <!-- <script src="nikeSnadbox.js" charset="utf-8"></script> -->
   <script src="main.js" charset="utf-8"></script>
 </body>
+
 </html>

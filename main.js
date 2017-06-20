@@ -150,14 +150,12 @@ function extractByCategory(category, shoes) {
   return categoryMatch
 }
 
-//****click static image to dring up relevant category****
 //RUN CLICK TO RENDER GALLERY
 var clickStaticRun = document.querySelector("#static-run")
 clickStaticRun.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $carouselOut = document.querySelector('#my-carousel')
   $carouselOut.innerHTML = ''
 
@@ -169,13 +167,12 @@ clickStaticRun.addEventListener('click', function() {
 
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
-//RUN tag CLICK TO RENDER GALLERY
+
 var clickRunT = document.querySelector("#run-carousel-tag")
 clickRunT.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $carouselOut = document.querySelector('#my-carousel')
   $carouselOut.innerHTML = ''
 
@@ -187,13 +184,12 @@ clickRunT.addEventListener('click', function() {
 
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
-//SKATE CLICK TO RENDER GALLERY
+
 var clickStaticSkate = document.querySelector("#static-skate")
 clickStaticSkate.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $carouselOut = document.querySelector('#my-carousel')
   $carouselOut.innerHTML = ''
 
@@ -205,39 +201,35 @@ clickStaticSkate.addEventListener('click', function() {
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
-//SKATE tag CLICK TO RENDER GALLERY
+
 var clickSkateT = document.querySelector("#skate-carousel-tag")
 clickSkateT.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
-//BALL CLICK TO RENDER GALLERY
+
 var clickStaticBall = document.querySelector("#static-ball")
 clickStaticBall.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
 
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
-//BALL tag CLICK TO RENDER GALLERY
+
 var clickBallT = document.getElementById("ball-carousel-tag")
 clickBallT.addEventListener('click', function() {
-  // Get all the running shoes data objects.
+
   var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
 
-  // Clear the gallery.
   var $gallery = document.querySelector('.gallery-main')
-  // $gallery.innerHTML = ''
 
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
@@ -265,14 +257,6 @@ function renderGallery(title, count, shoes) {
   return $galleryContent
 }
 
-// RENDER GALLERY LOOP
-// for (var i = 0; i < shoeInventory.length; i++) {
-//   var galleryTitle = renderGalleryTitle(shoeInventory[i])
-//   document.querySelector("#gallery-main").appendChild(galleryTitle)
-//  }
-//
-
-//RENDER GALLERY TITLE
 function renderGalleryTitle(title, count) {
 
   var $galleryHeader = document.createElement('div')
@@ -292,14 +276,6 @@ function renderGalleryTitle(title, count) {
 
   return $galleryHeader
 }
-
-//RENDERS A SINGLE SHOE...IF THE FOR LOOP IS NOT USED.
-
-// for (var i = 0; i < shoeInventory.length; i++) {
-//   var sneaker = renderShoe(shoeInventory[i])
-//   document.querySelector("#gallery-items").appendChild(sneaker)
-//   // console.log(sneaker)
-// }
 
 function renderShoe(shoeData) {
 
@@ -373,3 +349,6 @@ function renderShoe(shoeData) {
 
   return $shoe
 }
+
+
+//DETAILED VIEW

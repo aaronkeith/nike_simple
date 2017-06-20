@@ -164,7 +164,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  
   #my-carousel .item { height: 400px; }
 
   #slide1 {
@@ -181,7 +180,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-
   #my-carousel .item { height: 500px; }
 
   #slide1 {
@@ -195,4 +193,143 @@ body {
   #slide3 {
     background: url('images/carousel_large_03_basketball_opt.png');
   }
+}
+
+/* ---Gallery --- */
+
+.container .row #gallery-main {
+  display: flex;
+}
+
+.gallery-title-bar {
+  display: block;
+  justify-content: flex-start;
+  font-family: 'Roboto';
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #eee;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.gallery-shoe-qty {
+  margin-left: 0.6rem;
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+  color: #444;
+}
+
+.container .row #gallery-items {
+  margin: 0, auto;
+}
+
+.gallery-item-box {
+  border: none;
+  padding: 10px;
+}
+
+.gallery-item-box:hover {
+  box-shadow: inset 0 0 0 2px #333;
+}
+
+.shoe-thumb {
+  margin: 0 auto;
+}
+
+hr.color-break {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.gallery-colors-display {
+  font-family: 'Roboto';
+  margin-top: 3px;
+  margin-bottom: 1px;
+  color: #666;
+  padding: 3px;
+}
+
+.gallery-product-name {
+  margin: 0 0 1px;
+  color: #ccc;
+}
+
+.gallery-product-display-name {
+  font-size: 1.5rem;
+  font-variant-caps: petite-caps;
+  margin-bottom: 0.3rem;
+}
+
+.gallery-product-category {
+  font-variant-caps: all-small-caps;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.static-content p {
+  font-family: 'Roboto';
+  color: #444;
+  text-align: center;
+  margin-top: 3px;
+}
+
+/* ---Detail View --- */
+#detail-view {
+  height: 700px;
+}
+
+#detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#detail-main {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper-detail {
+  display: flex;
+}
+
+#detail-view {
+  display: flex;
+  margin: 100px, auto;
+}
+
+#atc-button {
+  justify-content: center;
+}
+
+.add-cart {
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  padding: 0;
+  margin: 5px, auto;
+}
+
+.md {
+  width: 60%;
+}
+
+.atc {
+  background-color: #f07444;
+  color: #ddd;
+  transition: 0.2s ease;
+}
+
+.atc:hover {
+  background-color: #ee622c;
+  transition: 0.2s ease;
 }

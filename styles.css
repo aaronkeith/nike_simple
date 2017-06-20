@@ -142,6 +142,13 @@ body {
   }
 }
 
+.static-content p {
+  font-family: 'Roboto';
+  color: #444;
+  text-align: center;
+  margin-top: 3px;
+}
+
 @media (min-width: 481px) {
 
   #my-carousel .item { height: 310px; }
@@ -268,46 +275,26 @@ hr.color-break {
   font-size: 1.5rem;
 }
 
-.static-content p {
-  font-family: 'Roboto';
-  color: #444;
-  text-align: center;
-  margin-top: 3px;
+.gallery-price {
+  margin-bottom: 0;
 }
 
 /* ---Detail View --- */
+
 #detail-view {
-  height: 700px;
+  /*display: flex;*/
+  justify-content: center;
 }
 
-#detail-image {
+.detail-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
-#detail-main {
-  flex-shrink: 0;
+.img-responsive.detail-main-img {
   min-width: 100%;
   min-height: 100%;
-}
-
-.wrapper-detail {
-  display: flex;
-}
-
-#detail-view {
-  display: flex;
-  margin: 100px, auto;
-}
-
-#atc-button {
-  justify-content: center;
-}
-
-.add-cart {
-  justify-content: center;
 }
 
 .btn {
@@ -320,7 +307,9 @@ hr.color-break {
 }
 
 .md {
-  width: 60%;
+  margin-top: 7rem;
+  width: 40%;
+  justify-content: center;
 }
 
 .atc {
@@ -332,4 +321,35 @@ hr.color-break {
 .atc:hover {
   background-color: #ee622c;
   transition: 0.2s ease;
+}
+
+.detail-header {
+  color: #ddd;
+  font-variant-caps: small-caps;
+}
+
+.detail-category {
+  color: #ddd;
+  font-variant-caps: petite-caps;
+}
+
+.detail-price {
+  color: #ddd;
+  margin-top: 2rem;
+}
+
+.color-style {
+  margin-top: 2rem;
+}
+
+.detail-color {
+  color: #ddd;
+}
+
+.detail-style {
+  color: #666;
+}
+
+.detail-shoe-thumb {
+  margin-top: 2rem;
 }

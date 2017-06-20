@@ -352,3 +352,63 @@ function renderShoe(shoeData) {
 
 
 //DETAILED VIEW
+
+function renderDetailView(shoeSelect) {
+  var $detailView = document.createElement('div')
+  $detailView.classList.add('detail-image')
+  $detailView.classList.add('col-sm-6')
+  $detailView.classList.add('col-xs-12')
+
+  var $detailImage = document.createElement('img')
+  $detailImage.classList.add('img-responsive', 'detail-main-img')
+  $detailImage.setAttribute('data-id', shoeSelect.styleNumber)
+
+  $detailView.appendChild($detailImage)
+  $detailView.appendChild($detailDetail)
+
+  var $detailDetail = document.createElement('div')
+  $detailDetail.classList.add('col-sm-6')
+  $detailDetail.classList.add('col-xs-12')
+
+  $detailDetail.appendChild($detailHeader)
+  $detailDetail.appendChild($detailCategory)
+  $detailDetail.appendChild($detailPrice)
+  $detailDetail.appendChild($colorStyle)
+  $detailDetail.appendChild($addToCart)
+
+  var $detailHeader = document.createElement('h3')
+  $detailHeader.classList.add('detail-header')
+  $detailHeader.textContent = (shoeSelect.style)
+
+  var $detailCategory = document.createElement('h4')
+  $detailCategory.classList.add('detail-category')
+  $detailCategory.textContent = (shoeSelect.category)
+
+  var $detailPrice = document.createElement('div')
+  $detailPrice.classList.add('detail-price')
+
+  var $detailPriceSpan = document.createElement('span')
+  $detailPriceSpan.classList.add('detail-price-display')
+  $detailPriceSpan.textContent = (shoeSelect.price)
+
+  $detailPrice.appendChild($detailPriceSpan)
+
+  var $colorStyle = document.createElement('div')
+  $colorStyle.classList.add('color-style')
+
+  var $detailColor = document.createElement('span')
+  $detailColor.classList.add('detail-color')
+  $detailColor.textContent = (shoeSelect.color)
+
+  var $detailStyle = document.createElement('span')
+  $detailStyle.classList.add('detail-style')
+  $detailStyle.textContent = (shoeSelect.styleNumber)
+
+  $colorStyle.appendChild($detailColor)
+  $colorStyle.appendChild($detailStyle)
+
+  var $addToCart = document.createElement('button')
+  $addToCart.classList.add('btn', 'md', 'atc')
+  $addToCart.textContent = ('Add To Cart')
+
+}

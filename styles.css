@@ -274,3 +274,62 @@ hr.color-break {
   text-align: center;
   margin-top: 3px;
 }
+
+/* ---Detail View --- */
+#detail-view {
+  height: 700px;
+}
+
+#detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#detail-main {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper-detail {
+  display: flex;
+}
+
+#detail-view {
+  display: flex;
+  margin: 100px, auto;
+}
+
+#atc-button {
+  justify-content: center;
+}
+
+.add-cart {
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  padding: 0;
+  margin: 5px, auto;
+}
+
+.md {
+  width: 60%;
+}
+
+.atc {
+  background-color: #f07444;
+  color: #ddd;
+  transition: 0.2s ease;
+}
+
+.atc:hover {
+  background-color: #ee622c;
+  transition: 0.2s ease;
+}

@@ -315,10 +315,11 @@ function renderShoe(shoeData) {
 
   $shoe.appendChild($productImage)
 
-  //****end image box*****///
+  //****end image box****//
 
   var $itemInfo = document.createElement('div')
   $itemInfo.classList.add('gallery-item-info')
+  $itemInfo.setAttribute('data-id', shoeData.styleNumber)
 
   var $numColors = document.createElement('div')
   $numColors.classList.add('gallery-number-colors')
@@ -335,7 +336,7 @@ function renderShoe(shoeData) {
   $numColors.appendChild($colorDisplay)
   $itemInfo.appendChild($hr)
 
-  //****end colors break*****///
+  //****end colors break****//
 
   var $productName = document.createElement('div')
   $productName.classList.add('gallery-product-name')
@@ -365,7 +366,7 @@ function renderShoe(shoeData) {
   $productPrice.appendChild($priceDisplay)
   $priceDisplay.appendChild($price)
 
-  //****end product details*****///
+  //****end product details****//
 
   $shoe.appendChild($itemInfo)
   $shoe.appendChild($productName)

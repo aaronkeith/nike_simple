@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 var shoeInventory = [{
   brand: 'NIKE',
   style: 'AIR MAX 2017',
@@ -150,7 +152,7 @@ function extractByCategory(category, shoes) {
   return categoryMatch
 }
 
-//RUN CLICK TO RENDER GALLERY
+//  RUN CLICK TO RENDER GALLERY
 var clickStaticRun = document.querySelector('#static-run')
 clickStaticRun.addEventListener('click', function () {
 
@@ -202,7 +204,7 @@ clickStaticSkate.addEventListener('click', function () {
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
 
-var clickSkateT = document.querySelector('#skate-carousel-tag)'
+var clickSkateT = document.querySelector('#skate-carousel-tag')
 clickSkateT.addEventListener('click', function () {
 
   var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
@@ -224,8 +226,8 @@ clickStaticBall.addEventListener('click', function () {
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
 
-var clickBallT = document.getElementById("ball-carousel-tag")
-clickBallT.addEventListener('click', function() {
+var clickBallT = document.getElementById('ball-carousel-tag')
+clickBallT.addEventListener('click', function () {
 
   var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
 
@@ -233,7 +235,6 @@ clickBallT.addEventListener('click', function() {
 
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
-
 
 //  RENDER GALLERY FUNCTION
 function renderGallery(title, count, shoes) {
@@ -340,6 +341,7 @@ function renderShoe(shoeData) {
   $productName.appendChild($productPrice)
   $productPrice.appendChild($priceDisplay)
   $priceDisplay.appendChild($price)
+
 //  ****end product details****//
 
   $shoe.appendChild($itemInfo)
@@ -347,7 +349,6 @@ function renderShoe(shoeData) {
 
   return $shoe
 }
-
 
 // DETAILED VIEW
 

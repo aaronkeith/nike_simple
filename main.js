@@ -144,15 +144,15 @@ var shoeInventory = [{
 ]
 
 function extractByCategory(category, shoes) {
-  var categoryMatch = shoes.filter(function(shoe) {
+  var categoryMatch = shoes.filter(function (shoe) {
     return shoe.category === category
   })
   return categoryMatch
 }
 
 //RUN CLICK TO RENDER GALLERY
-var clickStaticRun = document.querySelector("#static-run")
-clickStaticRun.addEventListener('click', function() {
+var clickStaticRun = document.querySelector('#static-run')
+clickStaticRun.addEventListener('click', function () {
 
   var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
 
@@ -168,8 +168,8 @@ clickStaticRun.addEventListener('click', function() {
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
 
-var clickRunT = document.querySelector("#run-carousel-tag")
-clickRunT.addEventListener('click', function() {
+var clickRunT = document.querySelector('run-carousel-tag')
+clickRunT.addEventListener('click', function () {
 
   var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
 
@@ -185,8 +185,8 @@ clickRunT.addEventListener('click', function() {
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
 
-var clickStaticSkate = document.querySelector("#static-skate")
-clickStaticSkate.addEventListener('click', function() {
+var clickStaticSkate = document.querySelector('#static-skate')
+clickStaticSkate.addEventListener('click', function () {
 
   var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
 
@@ -202,8 +202,8 @@ clickStaticSkate.addEventListener('click', function() {
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
 
-var clickSkateT = document.querySelector("#skate-carousel-tag")
-clickSkateT.addEventListener('click', function() {
+var clickSkateT = document.querySelector('#skate-carousel-tag)'
+clickSkateT.addEventListener('click', function () {
 
   var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
 
@@ -213,8 +213,8 @@ clickSkateT.addEventListener('click', function() {
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
 
-var clickStaticBall = document.querySelector("#static-ball")
-clickStaticBall.addEventListener('click', function() {
+var clickStaticBall = document.querySelector('#static-ball')
+clickStaticBall.addEventListener('click', function () {
 
   var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
 
@@ -235,7 +235,7 @@ clickBallT.addEventListener('click', function() {
 })
 
 
-//RENDER GALLERY FUNCTION
+//  RENDER GALLERY FUNCTION
 function renderGallery(title, count, shoes) {
   var $galleryContent = document.createElement('div')
 
@@ -291,7 +291,7 @@ function renderShoe(shoeData) {
 
   $shoe.appendChild($productImage)
 
-  //****end image box****//
+//  ****end image box****//
 
   var $itemInfo = document.createElement('div')
   $itemInfo.classList.add('gallery-item-info')
@@ -311,8 +311,7 @@ function renderShoe(shoeData) {
   $itemInfo.appendChild($numColors)
   $numColors.appendChild($colorDisplay)
   $itemInfo.appendChild($hr)
-
-  //****end colors break****//
+//  ****end colors break****//
 
   var $productName = document.createElement('div')
   $productName.classList.add('gallery-product-name')
@@ -341,8 +340,7 @@ function renderShoe(shoeData) {
   $productName.appendChild($productPrice)
   $productPrice.appendChild($priceDisplay)
   $priceDisplay.appendChild($price)
-
-  //****end product details****//
+//  ****end product details****//
 
   $shoe.appendChild($itemInfo)
   $shoe.appendChild($productName)
@@ -351,9 +349,10 @@ function renderShoe(shoeData) {
 }
 
 
-//DETAILED VIEW
+// DETAILED VIEW
 
 function renderDetailView(shoeSelect) {
+
   var $detailView = document.createElement('div')
   $detailView.classList.add('detail-image')
   $detailView.classList.add('col-sm-6')
@@ -362,19 +361,16 @@ function renderDetailView(shoeSelect) {
   var $detailImage = document.createElement('img')
   $detailImage.classList.add('img-responsive', 'detail-main-img')
   $detailImage.setAttribute('data-id', shoeSelect.styleNumber)
+  $detailImage.setAttribute('src', shoeSelect.shoeImage)
 
   $detailView.appendChild($detailImage)
-  $detailView.appendChild($detailDetail)
 
   var $detailDetail = document.createElement('div')
+  $detailDetail.classList.add('detail-detail')
   $detailDetail.classList.add('col-sm-6')
   $detailDetail.classList.add('col-xs-12')
 
-  $detailDetail.appendChild($detailHeader)
-  $detailDetail.appendChild($detailCategory)
-  $detailDetail.appendChild($detailPrice)
-  $detailDetail.appendChild($colorStyle)
-  $detailDetail.appendChild($addToCart)
+  $detailView.appendChild($detailDetail)
 
   var $detailHeader = document.createElement('h3')
   $detailHeader.classList.add('detail-header')
@@ -392,6 +388,9 @@ function renderDetailView(shoeSelect) {
   $detailPriceSpan.textContent = (shoeSelect.price)
 
   $detailPrice.appendChild($detailPriceSpan)
+  $detailDetail.appendChild($detailHeader)
+  $detailDetail.appendChild($detailCategory)
+  $detailDetail.appendChild($detailPrice)
 
   var $colorStyle = document.createElement('div')
   $colorStyle.classList.add('color-style')
@@ -404,6 +403,7 @@ function renderDetailView(shoeSelect) {
   $detailStyle.classList.add('detail-style')
   $detailStyle.textContent = (shoeSelect.styleNumber)
 
+  $detailDetail.appendChild($colorStyle)
   $colorStyle.appendChild($detailColor)
   $colorStyle.appendChild($detailStyle)
 
@@ -411,4 +411,7 @@ function renderDetailView(shoeSelect) {
   $addToCart.classList.add('btn', 'md', 'atc')
   $addToCart.textContent = ('Add To Cart')
 
+  $detailDetail.appendChild($addToCart)
+
+  return $detailView
 }

@@ -282,7 +282,6 @@ hr.color-break {
 /* ---Detail View --- */
 
 #detail-view {
-  /*display: flex;*/
   justify-content: center;
 }
 
@@ -293,8 +292,8 @@ hr.color-break {
 }
 
 .img-responsive.detail-main-img {
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 80%;
+  min-height: 80%;
 }
 
 .btn {

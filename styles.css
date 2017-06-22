@@ -150,6 +150,14 @@ body {
   font-family: 'Roboto';
 }
 
+.detail-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 5px;
+  padding: 10px;
+}
+
 @media (min-width: 481px) {
   #my-carousel .item {
     height: 310px;
@@ -291,9 +299,10 @@ hr.color-break {
   display: flex;
   margin: 0 auto;
   padding: 10px 1px;
-  box-shadow: inset 0 0 0 2px #333;
+  box-shadow: inset 0 0 0 1px #222;
   flex-wrap: wrap;
   justify-content: center;
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 1) 0%, rgba(36, 36, 36, 1) 56%, rgba(44, 44, 44, 0.41) 100%);
 }
 
 .detail-image {
@@ -308,10 +317,11 @@ hr.color-break {
   flex-direction: column;
   margin: 0 auto;
   font-size: 10px;
+  padding: 40px;
 }
 
 .img-responsive.detail-main-img {
-  min-width: 95%;
+  min-width: 90%;
   min-height: auto;
 }
 
@@ -342,7 +352,6 @@ hr.color-break {
 }
 
 h3.detail-header {
-  margin-top: 3em;
   margin-bottom: 0;
   color: #ccc;
   font-size: 3em;
@@ -353,18 +362,20 @@ h3.detail-header {
 .detail-category {
   margin-top: 5px;
   color: #aaa;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: 400;
   font-variant-caps: all-small-caps;
 }
 
 .detail-price {
+  font-size: 2em;
   margin-top: 10px;
   color: #ccc;
 }
 
 .color-style {
-  margin-top: 2rem;
+  font-size: 1.6em;
+  margin-top: 3rem;
 }
 
 .detail-color {
@@ -373,6 +384,7 @@ h3.detail-header {
 
 .detail-style {
   color: #666;
+  margin-top: 1.5rem;
 }
 
 .detail-thumb-img {

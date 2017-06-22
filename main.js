@@ -21,7 +21,7 @@ var shoeInventory = [
     color: 'Black/Black',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR MAX 2017 MEN\'S RUNNING SHOE $190 Style/ 849559-004 Black Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR MAX 2017 MEN\'S RUNNING SHOE $190 Style: 849559-004 Black Black.jpg'
   },
   {
     brand: 'NIKE',
@@ -32,7 +32,7 @@ var shoeInventory = [
     color: 'Binary-Blue/Chlorine-Blue/Glacier-Blue',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR MAX 2017 MEN\'S RUNNING SHOE $190 Style/ 849559-404 Binary-Blue Chlorine-Blue Glacier-Blue.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR MAX 2017 MEN\'S RUNNING SHOE $190 Style: 849559-404 Binary-Blue Chlorine-Blue Glacier-Blue.jpg'
   },
   {
     brand: 'NIKE',
@@ -54,7 +54,7 @@ var shoeInventory = [
     color: 'Black/Anthracite/Cool-Grey/Chlorine-Blue',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR MAX SEQUENT 2 MEN\'S RUNNING SHOE $100 Style/ 852461-004 Black Anthracite Cool-Grey Chlorine-Blue.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR MAX SEQUENT 2 MEN\'S RUNNING SHOE $100 Style: 852461-004 Black Anthracite Cool-Grey Chlorine-Blue.jpg'
   },
   {
     brand: 'NIKE',
@@ -76,7 +76,7 @@ var shoeInventory = [
     color: 'Team-Orange/Wolf-Grey/Black',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM ELITE 8 MEN\'S RUNNING SHOE $115 Style/ 748588-802 Team-Orange Wolf-Grey Black.jpeg'
+    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM ELITE 8 MEN\'S RUNNING SHOE $115 Style: 748588-802 Team-Orange Wolf-Grey Black.jpeg'
   },
   {
     brand: 'NIKE',
@@ -98,7 +98,7 @@ var shoeInventory = [
     color: 'Ice-Blue/Crimson White/Blue-Fox',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM PEGASUS 34 MEN\'S RUNNING SHOE $110 Style/ 880555-404 Ice-Blue Crimson White Blue-Fox.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM PEGASUS 34 MEN\'S RUNNING SHOE $110 Style: 880555-404 Ice-Blue Crimson White Blue-Fox.jpg'
   },
   {
     brand: 'NIKE',
@@ -109,7 +109,7 @@ var shoeInventory = [
     color: 'Hyper-Orange/Chlorine-Blue/Black',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM PEGASUS 34 MEN\'S RUNNING SHOE $110 Style/ 880555-800 Hyper-Orange Chlorine-Blue Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM PEGASUS 34 MEN\'S RUNNING SHOE $110 Style: 880555-800 Hyper-Orange Chlorine-Blue Black.jpg'
   },
   {
     brand: 'NIKE',
@@ -131,7 +131,7 @@ var shoeInventory = [
     color: 'Stealth/Dark-Grey/Volt/Black',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM TERRA KIGER 4 MEN\'S RUNNING SHOE $125 Style/ 880563-002 Stealth Dark-Grey Volt Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE AIR ZOOM TERRA KIGER 4 MEN\'S RUNNING SHOE $125 Style: 880563-002 Stealth Dark-Grey Volt Black.jpg'
   },
   {
     brand: 'NIKE',
@@ -142,7 +142,7 @@ var shoeInventory = [
     color: 'White-Sail/Pure-Platinum/White',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style/ 526628-100 White Sail Pure-Platinum White.jpg'
+    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style: 526628-100 White Sail Pure-Platinum White.jpg'
   },
   {
     brand: 'NIKE',
@@ -153,7 +153,7 @@ var shoeInventory = [
     color: 'Mica Blue/White/Legion Blue',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style/ 526628-102 Mica-Blue White Legion-Blue.jpeg'
+    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style: 526628-102 Mica-Blue White Legion-Blue.jpeg'
   },
   {
     brand: 'NIKE',
@@ -164,7 +164,7 @@ var shoeInventory = [
     color: 'Ghost Green Whip/Cool Grey',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style/ 526628-102 Mica-Blue White Legion-Blue.jpeg'
+    shoeImage: 'images/RUN/RUN NIKE FLYKNIT RACER UNISEX RUNNING SHOE $150 Style: 526628-103 Ghost Green Whip Cool-Grey.jpg'
   },
   {
     brand: 'NIKE',
@@ -175,7 +175,7 @@ var shoeInventory = [
     color: 'Wolf Grey/Cool Grey',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style/ 880841-002 Wolf Grey Cool-Grey.jpg'
+    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style: 880841-002 Wolf Grey Cool-Grey.jpg'
   },
   {
     brand: 'NIKE',
@@ -186,7 +186,7 @@ var shoeInventory = [
     color: 'White/White',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style/ 880841-100 White White.jpg'
+    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style: 880841-100 White White.jpg'
   },
   {
     brand: 'NIKE',
@@ -197,7 +197,7 @@ var shoeInventory = [
     color: 'White/White',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style/ 880841-600 Bordeaux White Tough-Red Port-Wine.jpeg'
+    shoeImage: 'images/RUN/RUN NIKE FREE RN COMMUTER 2017 MEN\'S RUNNING SHOE $110 Style: 880841-600 Bordeaux White Tough-Red Port-Wine.jpeg'
   },
   {
     brand: 'NIKE',
@@ -208,7 +208,7 @@ var shoeInventory = [
     color: 'White/Volt/Black',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE ZOOM ALL OUT LOW MEN\'S RUNNING SHOE  $140 $109.97 Style/ 878670-107 White Volt Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE ZOOM ALL OUT LOW MEN\'S RUNNING SHOE  $140 $109.97 Style: 878670-107 White Volt Black.jpg'
   },
   {
     brand: 'NIKE',
@@ -219,7 +219,7 @@ var shoeInventory = [
     color: 'Dark Grey/Bright Crimson/White/Black',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE ZOOM ALL OUT LOW MEN\'S RUNNING SHOE $140 Style/ 878670-006 Dark-Grey Bright-Crimson White Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE ZOOM ALL OUT LOW MEN\'S RUNNING SHOE $140 Style: 878670-006 Dark-Grey Bright-Crimson White Black.jpg'
   },
   {
     brand: 'NIKE',
@@ -230,7 +230,7 @@ var shoeInventory = [
     color: 'Pure Platinum/Black/White',
     numberColors: 3 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE ZOOM ALL OUT LOW MEN\'S RUNNING SHOE $140 Style/ 878670-006 Dark-Grey Bright-Crimson White Black.jpg'
+    shoeImage: 'images/RUN/RUN NIKE ZOOM FLYKNIT STREAK UNISEX RUNNING SHOE $160 Style- 835994-002 Pure-Platinum Black White.jpg'
   },
   {
     brand: 'NIKE',
@@ -263,7 +263,7 @@ var shoeInventory = [
     color: 'Legion Blue/Rage Green/White',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE ZOOM STREAK 6 UNISEX RACING SHOE $110 Style/ 831413-400 Legion-Blue Rage-Green White.jpeg'
+    shoeImage: 'images/RUN/RUN NIKE ZOOM STREAK 6 UNISEX RACING SHOE $110 Style: 831413-400 Legion-Blue Rage-Green White.jpeg'
   },
   {
     brand: 'NIKE',
@@ -274,7 +274,7 @@ var shoeInventory = [
     color: 'Racer Pink/Sport Fuchsia/Sunset Glow/White',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/RUN/RUN NIKE ZOOM STREAK 6 UNISEX RACING SHOE $110 Style/ 831413-602 Racer-Pink Sport-Fuchsia Sunset-Glow White.jpg'
+    shoeImage: 'images/RUN/RUN NIKE ZOOM STREAK 6 UNISEX RACING SHOE $110 Style: 831413-602 Racer-Pink Sport-Fuchsia Sunset-Glow White.jpg'
   },
   {
     brand: 'NIKE',
@@ -450,7 +450,7 @@ var shoeInventory = [
     color: 'Armory Navy/Electrolime',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/BALL/BALL JORDAN SUPER FLY 5 PO MEN\'S BASKETBALL SHOE $140 Style/ 881571-405 Armory-Navy Electrolime.jpg'
+    shoeImage: 'images/BALL/BALL JORDAN SUPER FLY 5 PO MEN\'S BASKETBALL SHOE $140 Style: 881571-405 Armory-Navy Electrolime.jpg'
   },
   {
     brand: 'NIKE',
@@ -483,7 +483,7 @@ var shoeInventory = [
     color: 'Anthracite/Anthracite',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/BALL/BALL LEBRON XIV LMTD MEN\'S BASKETBALL SHOE $175 Style/ 852402-002 Anthracite Anthracite.jpg'
+    shoeImage: 'images/BALL/BALL LEBRON XIV LMTD MEN\'S BASKETBALL SHOE $175 Style: 852402-002 Anthracite Anthracite.jpg'
   },
   {
     brand: 'NIKE',
@@ -516,7 +516,7 @@ var shoeInventory = [
     color: 'Black/Blue Fury/Metallic Gold',
     numberColors: 2 + ' ' + 'Colors',
     sex: 'MEN\'s',
-    shoeImage: 'images/BALL/BALL NIKE ZOOM KD 9 ELITE MEN\'S BASKETBALL SHOE $150 Style/ 878637-007 Black Blue-Fury Metallic-Gold.jpg'
+    shoeImage: 'images/BALL/BALL NIKE ZOOM KD 9 ELITE MEN\'S BASKETBALL SHOE $150 Style: 878637-007 Black Blue-Fury Metallic-Gold.jpg'
   },
   {
     brand: 'NIKE',
@@ -832,11 +832,11 @@ function renderDetailView(shoe) {
 
   var $detailColor = document.createElement('div')
   $detailColor.classList.add('detail-color')
-  $detailColor.textContent = (shoe.color)
+  $detailColor.textContent = ('Color: ' + shoe.color)
 
   var $detailStyle = document.createElement('div')
   $detailStyle.classList.add('detail-style')
-  $detailStyle.textContent = ('Color:' + shoe.styleNumber)
+  $detailStyle.textContent = ('Style Number: ' + shoe.styleNumber)
 
   $detailDetail.appendChild($colorStyle)
   $colorStyle.appendChild($detailColor)

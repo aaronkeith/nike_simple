@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: #1a1a1a;
   height: 150vh;
+  background-color: #1a1a1a;
 }
 
 #my-carousel {
@@ -16,20 +16,20 @@ body {
 }
 
 #carousel-tag {
-  text-align: center;
   margin: 0 auto;
   margin-top: 5px;
+  text-align: center;
 }
 
-#carousel-tag > a {
-  color: #333;
+#carousel-tag>a {
   margin: 5px 3px;
+  color: #333;
   font-size: 14px;
 }
 
-#carousel-tag > a:hover {
-  color: #83fe00;
+#carousel-tag>a:hover {
   text-decoration: none;
+  color: #83fe00;
 }
 
 #static-caption {
@@ -37,27 +37,25 @@ body {
 }
 
 #static-caption .img-responsive {
-  margin: 5px auto;
   width: 40%;
+  margin: 5px auto;
 }
 
 .static-images {
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 }
 
-#static-caption > p {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 20px;
+#static-caption>p {
+  padding-bottom: 15px;
   text-align: center;
   color: #83fe00;
-  padding-bottom: 15px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
 }
 
-#static-run,
-#static-skate,
-#static-ball {
+#static-run, #static-skate, #static-ball {
   position: relative;
   display: inline-block;
   width: calc(100% / 3 - 3px);
@@ -70,8 +68,8 @@ body {
 }
 
 .static-top {
-  opacity: 0;
   position: absolute;
+  opacity: 0;
 }
 
 .static-top:hover {
@@ -79,128 +77,113 @@ body {
   opacity: 1;
 }
 
+
 /* ---Media Queries------ */
 
 @media (max-width: 480px) {
-
-  #my-carousel .item { height: 310px; }
-
+  #my-carousel .item {
+    height: 310px;
+  }
   #slide1 {
     background-image: url('images/carousel_xsmall_01_run_opt.png');
   }
-
   #slide2 {
     background-image: url('images/carousel_xsmall_02_skate_opt.png');
   }
-
   #slide3 {
     background-image: url('images/carousel_xsmall_03_basketball_opt.png');
   }
-
   a.carousel-control {
     display: none;
   }
-
   #my-carousel {
     margin-top: 5px;
   }
-
-  #carousel-tag > a {
-    color: #333;
+  #carousel-tag>a {
     margin: 3px 1px;
+    color: #333;
     font-size: 12px;
   }
-
-  #static-caption > p {
+  #static-caption>p {
     font-family: 'Roboto';
-    font-weight: 100;
     font-size: 14px;
+    font-weight: 100;
   }
-
-  #static-run,
-  #static-skate,
-  #static-ball {
+  #static-run, #static-skate, #static-ball {
     position: relative;
     display: block;
     width: 70%;
     margin: 0 auto;
   }
-
   .static-content .img-responsive {
     display: inline-block;
     width: 100%;
     margin: 3px auto;
   }
-
   .static-images .col-xs-12 {
     height: 60px;
     margin: 3px;
   }
-
   #static-caption {
     margin: 3px auto;
   }
 }
 
 .static-content p {
-  font-family: 'Roboto';
-  color: #444;
-  text-align: center;
   margin-top: 3px;
+  text-align: center;
+  color: #444;
+  font-family: 'Roboto';
 }
 
 @media (min-width: 481px) {
-
-  #my-carousel .item { height: 310px; }
-
+  #my-carousel .item {
+    height: 310px;
+  }
   #slide1 {
     background: url('images/carousel_small_01_run_opt.png');
   }
-
   #slide2 {
     background: url('images/carousel_small_02_skate_opt.png');
   }
-
   #slide3 {
     background: url('images/carousel_small_03_basketball_opt.png');
   }
-
   #my-carousel {
     margin-top: 15px;
   }
 }
 
 @media (min-width: 992px) {
-  #my-carousel .item { height: 400px; }
-
+  #my-carousel .item {
+    height: 400px;
+  }
   #slide1 {
     background: url('images/carousel_medium_01_run_opt.png');
   }
-
   #slide2 {
     background: url('images/carousel_medium_02_skate_opt.png');
   }
-
   #slide3 {
     background: url('images/carousel_medium_03_basketball_opt.png');
   }
 }
 
 @media (min-width: 1200px) {
-  #my-carousel .item { height: 500px; }
-
+  #my-carousel .item {
+    height: 500px;
+  }
   #slide1 {
     background: url('images/carousel_large_01_run_opt.png');
   }
-
   #slide2 {
     background: url('images/carousel_large_02_skate_opt.png');
   }
-
   #slide3 {
     background: url('images/carousel_large_03_basketball_opt.png');
   }
 }
+
 
 /* ---Gallery --- */
 
@@ -210,20 +193,20 @@ body {
 
 .gallery-title-bar {
   display: block;
-  justify-content: flex-start;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: #eee;
   font-family: 'Roboto';
   font-size: 1.7rem;
   font-weight: 400;
-  color: #eee;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  justify-content: flex-start;
 }
 
 .gallery-shoe-qty {
   margin-left: 0.6rem;
-  font-size: 1.6rem;
-  font-family: 'Roboto';
   color: #444;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
 }
 
 .container .row #gallery-items {
@@ -231,8 +214,8 @@ body {
 }
 
 .gallery-item-box {
-  border: none;
   padding: 10px;
+  border: none;
 }
 
 .gallery-item-box:hover {
@@ -244,17 +227,17 @@ body {
 }
 
 hr.color-break {
+  width: 100%;
   margin-top: 5px;
   margin-bottom: 7px;
-  width: 100%;
 }
 
 .gallery-colors-display {
-  font-family: 'Roboto';
   margin-top: 3px;
   margin-bottom: 1px;
-  color: #666;
   padding: 3px;
+  color: #666;
+  font-family: 'Roboto';
 }
 
 .gallery-product-name {
@@ -263,16 +246,16 @@ hr.color-break {
 }
 
 .gallery-product-display-name {
+  margin-bottom: 0.3rem;
   font-size: 1.5rem;
   font-variant-caps: petite-caps;
-  margin-bottom: 0.3rem;
 }
 
 .gallery-product-category {
-  font-variant-caps: all-small-caps;
-  color: #aaa;
   margin-bottom: 0.3rem;
+  color: #aaa;
   font-size: 1.5rem;
+  font-variant-caps: all-small-caps;
 }
 
 .gallery-price {
@@ -281,7 +264,12 @@ hr.color-break {
 
 /* ---Detail View --- */
 
-#detail-view {
+.detail-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 1px;
+  box-shadow: inset 0 0 0 2px #333;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -289,52 +277,67 @@ hr.color-break {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 10px;
 }
 
 .img-responsive.detail-main-img {
-  min-width: 80%;
-  min-height: 80%;
+  min-width: 95%;
+  min-height: auto;
 }
 
 .btn {
   display: inline-flex;
-  border-radius: 2px;
-  border: none;
   height: 45px;
-  padding: 0;
   margin: 5px, auto;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
 }
 
 .md {
-  margin-top: 7rem;
   width: 40%;
+  margin-top: 3rem;
   justify-content: center;
 }
 
 .atc {
-  background-color: #f07444;
-  color: #ddd;
   transition: 0.2s ease;
+  color: #ddd;
+  background-color: #f07444;
 }
 
 .atc:hover {
-  background-color: #ee622c;
   transition: 0.2s ease;
+  background-color: #ee622c;
 }
 
-.detail-header {
-  color: #ddd;
-  font-variant-caps: small-caps;
-}
-
-.detail-category {
-  color: #ddd;
+h3.detail-header {
+  margin-top: 3em;
+  margin-bottom: 0;
+  color: #ccc;
+  font-size: 3em;
+  font-weight: 500;
   font-variant-caps: petite-caps;
 }
 
+.detail-category {
+  margin-top: 5px;
+  color: #aaa;
+  font-size: 2em;
+  font-weight: 400;
+  font-variant-caps: all-small-caps;
+}
+
 .detail-price {
-  color: #ddd;
-  margin-top: 2rem;
+  margin-top: 10px;
+  color: #ccc;
 }
 
 .color-style {
@@ -349,6 +352,7 @@ hr.color-break {
   color: #666;
 }
 
-.detail-shoe-thumb {
-  margin-top: 2rem;
+.detail-thumb-img {
+  width: auto;
+  height: 50px;
 }

@@ -751,6 +751,7 @@ function renderShoe(shoeData) {
 var clickDetailDisplay = document.querySelector('#gallery-main')
 var $carouselOut = document.querySelector('#my-carousel')
 var $carouselTagOut = document.querySelector('#carousel-tag')
+var $detailDropdown = document.querySelector('#detail-dropdown')
 
 clickDetailDisplay.addEventListener('click', function (e) {
   if (e.target.classList.contains('shoe-thumb') === false) {
@@ -763,12 +764,12 @@ clickDetailDisplay.addEventListener('click', function (e) {
   var detailRender = renderDetailView(shoe)
 
   var $detailView = document.querySelector('#detail-view')
-  $detailView.innerHTML = ''
+  // $detailView.innerHTML = ''
   $detailView.classList.remove('hidden')
+  // $detailDropdown.classList.remove('hidden')
   clickDetailDisplay.classList.add('hidden')
   $carouselOut.classList.add('hidden')
   $carouselTagOut.classList.add('hidden')
-
   $detailView.appendChild(detailRender)
 
 })

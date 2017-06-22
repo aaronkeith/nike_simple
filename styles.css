@@ -332,11 +332,13 @@ hr.color-break {
   padding: 0;
   border: none;
   border-radius: 2px;
+  font-size: 2em;
+  font-variant-caps: all-petite-caps;
 }
 
 .md {
-  width: 40%;
-  margin-top: 3rem;
+  width: 50%;
+  margin-top: 2.6rem;
   justify-content: center;
 }
 

@@ -377,7 +377,7 @@ h3.detail-header {
 
 .color-style {
   font-size: 1.6em;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .detail-color {
@@ -386,10 +386,28 @@ h3.detail-header {
 
 .detail-style {
   color: #666;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .detail-thumb-img {
   width: auto;
   height: 50px;
+}
+
+ul.ul-size-qty {
+  width: 50%;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.form-control {
+  background: #1b1b1b;
+  color: #bbb;
+  border: #fff;
+}
+
+h5.size-placeholder,
+h5.qty-placeholder {
+  color: #666;
+  font-size: 1.5em;
 }

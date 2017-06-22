@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 var shoeInventory = [
   {
     brand: 'NIKE',
@@ -560,7 +558,6 @@ function extractByCategory(category, shoes) {
   return categoryMatch
 }
 
-// CLICK TO RENDER GALLERY
 var clickStaticRun = document.querySelector('#static-run')
 clickStaticRun.addEventListener('click', function () {
 
@@ -632,7 +629,6 @@ clickBallT.addEventListener('click', function () {
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
 
-//  RENDER GALLERY FUNCTION
 function renderGallery(title, count, shoes) {
   var $galleryContent = document.createElement('div')
 
@@ -746,12 +742,9 @@ function renderShoe(shoeData) {
   return $shoe
 }
 
-// DETAILED VIEW
-
 var clickDetailDisplay = document.querySelector('#gallery-main')
 var $carouselOut = document.querySelector('#my-carousel')
 var $carouselTagOut = document.querySelector('#carousel-tag')
-var $detailDropdown = document.querySelector('#detail-dropdown')
 
 clickDetailDisplay.addEventListener('click', function (e) {
   if (e.target.classList.contains('shoe-thumb') === false) {

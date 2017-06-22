@@ -812,7 +812,7 @@ function renderDetailView(shoe) {
   var $detailPrice = document.createElement('div')
   $detailPrice.classList.add('detail-price')
 
-  var $detailPriceSpan = document.createElement('span')
+  var $detailPriceSpan = document.createElement('div')
   $detailPriceSpan.classList.add('detail-price-display')
   $detailPriceSpan.textContent = ('$' + shoe.price)
 
@@ -835,6 +835,84 @@ function renderDetailView(shoe) {
   $detailDetail.appendChild($colorStyle)
   $colorStyle.appendChild($detailColor)
   $colorStyle.appendChild($detailStyle)
+
+  var $detailSelect = document.createElement('div')
+  $detailSelect.classList.add('detail-select')
+
+  var $qtyChart = document.createElement('div')
+  $qtyChart.classList.add('qty-chart')
+
+  var $ulSizeQty = document.createElement('ul')
+  $ulSizeQty.classList.add('ul-size-qty')
+
+  var $liQtySize = document.createElement('li')
+  $liQtySize.classList.add('qty-size')
+
+  var $sizePlaceholder = document.createElement('h5')
+  $sizePlaceholder.classList.add('size-placeholder')
+  $sizePlaceholder.textContent = 'Size'
+
+  var $sizeDrop = document.createElement('select')
+  $sizeDrop.classList.add('form-control')
+  $sizeDrop.classList.add('size-drop')
+
+  var $sizes = [7, 9, 11, 13]
+  var $sizeDropOptions1 = document.createElement('option')
+  $sizeDropOptions1.classList.add('size')
+  $sizeDropOptions1.textContent = $sizes[0]
+  var $sizeDropOptions2 = document.createElement('option')
+  $sizeDropOptions2.classList.add('size')
+  $sizeDropOptions2.textContent = $sizes[1]
+  var $sizeDropOptions3 = document.createElement('option')
+  $sizeDropOptions3.classList.add('size')
+  $sizeDropOptions3.textContent = $sizes[2]
+  var $sizeDropOptions4 = document.createElement('option')
+  $sizeDropOptions4.classList.add('size')
+  $sizeDropOptions4.textContent = $sizes[3]
+
+  $detailDetail.appendChild($detailSelect)
+  $detailSelect.appendChild($qtyChart)
+  $qtyChart.appendChild($ulSizeQty)
+  $ulSizeQty.appendChild($liQtySize)
+  $liQtySize.appendChild($sizePlaceholder)
+  $sizePlaceholder.appendChild($sizeDrop)
+  $sizeDrop.appendChild($sizeDropOptions1)
+  $sizeDrop.appendChild($sizeDropOptions2)
+  $sizeDrop.appendChild($sizeDropOptions3)
+  $sizeDrop.appendChild($sizeDropOptions4)
+
+  var $liQtyAmt = document.createElement('li')
+  $liQtyAmt.classList.add('qty-amt')
+
+  var $qtyPlaceholder = document.createElement('h5')
+  $qtyPlaceholder.classList.add('qty-placeholder')
+  $qtyPlaceholder.textContent = 'Quantity'
+
+  var $qtyDrop = document.createElement('select')
+  $qtyDrop.classList.add('form-control')
+  $qtyDrop.classList.add('qty-chart')
+
+  var $qty = [1, 2, 3, 4]
+  var $qtyDropOptions1 = document.createElement('option')
+  $qtyDropOptions1.classList.add('size')
+  $qtyDropOptions1.textContent = $qty[0]
+  var $qtyDropOptions2 = document.createElement('option')
+  $qtyDropOptions2.classList.add('size')
+  $qtyDropOptions2.textContent = $qty[1]
+  var $qtyDropOptions3 = document.createElement('option')
+  $qtyDropOptions3.classList.add('size')
+  $qtyDropOptions3.textContent = $qty[2]
+  var $qtyDropOptions4 = document.createElement('option')
+  $qtyDropOptions4.classList.add('size')
+  $qtyDropOptions4.textContent = $qty[3]
+
+  $ulSizeQty.appendChild($liQtyAmt)
+  $liQtyAmt.appendChild($qtyPlaceholder)
+  $qtyPlaceholder.appendChild($qtyDrop)
+  $qtyDrop.appendChild($qtyDropOptions1)
+  $qtyDrop.appendChild($qtyDropOptions2)
+  $qtyDrop.appendChild($qtyDropOptions3)
+  $qtyDrop.appendChild($qtyDropOptions4)
 
   var $addToCart = document.createElement('button')
   $addToCart.classList.add('btn', 'md', 'atc')

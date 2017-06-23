@@ -916,12 +916,13 @@ function renderDetailView(shoe) {
 
   var $addToCart = document.createElement('button')
   $addToCart.classList.add('btn', 'md', 'atc')
+  $addToCart.setAttribute('data-id', shoe.styleNumber)
   $addToCart.textContent = ('Add To Cart')
 
   $detailDetail.appendChild($addToCart)
 
   $detailWrapper.addEventListener('click', function (e) {
-    if (e.target.classList.contains('shoe-thumb') === false) {
+    if (e.target.classList.contains('atc') === false) {
       return
     }
     var styleId = e.target.getAttribute('data-id')
@@ -930,42 +931,55 @@ function renderDetailView(shoe) {
 
     var cartRender = renderShoppingCart(shoe)
 
+    var $staticContent = document.querySelector('.static-content')
     var $shoppingCart = document.querySelector('#shopping-cart')
-    $detailView.classList.add('hidden')
+    $staticContent.classList.add('hidden')
+    $detailWrapper.classList.add('hidden')
     clickDetailDisplay.classList.add('hidden')
     $carouselOut.classList.add('hidden')
     $carouselTagOut.classList.add('hidden')
     $shoppingCart.appendChild(cartRender)
+    $shoppingCart.classList.remove('hidden')
   })
 
   return $detailWrapper
 }
 
 function renderShoppingCart(shoe) {
-  var $detailWrapper = document.createElement('div')
-  $detailWrapper.classList.add('detail-wrapper')
+  var $detailWrapper2 = document.createElement('div')
+  $detailWrapper2.classList.add('detail-wrapper2')
 
-  var $detailView = document.createElement('div')
-  $detailView.classList.add('detail-image')
-  $detailView.classList.add('col-md-6')
-  $detailView.classList.add('col-sm-6')
-  $detailView.classList.add('col-xs-12')
+  var $cartHeader = document.createElement('div')
+  $cartHeader.classList.add('cart-header')
 
-  var $detailImage = document.createElement('img')
-  $detailImage.classList.add('img-responsive', 'detail-main-img')
-  $detailImage.setAttribute('data-id', shoe.styleNumber)
-  $detailImage.setAttribute('src', shoe.shoeImage)
+  var $cartHeadText = document.createElement('p')
+  $cartHeadText.classList.add('cart-head-text')
+  $cartHeadText.textContent = ('YOUR ITEMS')
 
-  $detailWrapper.appendChild($detailView)
-  $detailView.appendChild($detailImage)
+  $cartHeader.appendChild($cartHeadText)
 
-  var $detailDetail = document.createElement('div')
-  $detailDetail.classList.add('detail-detail')
-  $detailDetail.classList.add('col-md-6')
-  $detailDetail.classList.add('col-sm-6')
-  $detailDetail.classList.add('col-xs-12')
+  var $detailView2 = document.createElement('div')
+  $detailView2.classList.add('detail-image2')
+  $detailView2.classList.add('col-md-6')
+  $detailView2.classList.add('col-sm-6')
+  $detailView2.classList.add('col-xs-12')
 
-  $detailWrapper.appendChild($detailDetail)
+  var $detailImage2 = document.createElement('img')
+  $detailImage2.classList.add('img-responsive', 'shoe-thumb')
+  $detailImage2.setAttribute('data-id', shoe.styleNumber)
+  $detailImage2.setAttribute('src', shoe.shoeImage)
+
+  $detailWrapper2.appendChild($cartHeader)
+  $detailWrapper2.appendChild($detailView2)
+  $detailView2.appendChild($detailImage2)
+
+  var $detailDetail2 = document.createElement('div')
+  $detailDetail2.classList.add('detail-detail2')
+  $detailDetail2.classList.add('col-md-6')
+  $detailDetail2.classList.add('col-sm-6')
+  $detailDetail2.classList.add('col-xs-12')
+
+  $detailWrapper2.appendChild($detailDetail2)
 
   var $detailHeader = document.createElement('h3')
   $detailHeader.classList.add('detail-header')
@@ -978,14 +992,14 @@ function renderShoppingCart(shoe) {
   var $detailPrice = document.createElement('div')
   $detailPrice.classList.add('detail-price')
 
-  var $detailPriceSpan = document.createElement('div')
-  $detailPriceSpan.classList.add('detail-price-display')
-  $detailPriceSpan.textContent = ('$' + shoe.price)
+  var $detailPriceSpan2 = document.createElement('div')
+  $detailPriceSpan2.classList.add('detail-price-display2')
+  $detailPriceSpan2.textContent = ('$' + shoe.price)
 
-  $detailDetail.appendChild($detailHeader)
-  $detailDetail.appendChild($detailCategory)
-  $detailDetail.appendChild($detailPrice)
-  $detailPrice.appendChild($detailPriceSpan)
+  $detailDetail2.appendChild($detailHeader)
+  $detailDetail2.appendChild($detailCategory)
+  $detailDetail2.appendChild($detailPrice)
+  $detailPrice.appendChild($detailPriceSpan2)
 
   var $colorStyle = document.createElement('div')
   $colorStyle.classList.add('color-style')
@@ -998,20 +1012,39 @@ function renderShoppingCart(shoe) {
   $detailStyle.classList.add('detail-style')
   $detailStyle.textContent = ('Style Number: ' + shoe.styleNumber)
 
-  $detailDetail.appendChild($colorStyle)
+  $detailDetail2.appendChild($colorStyle)
   $colorStyle.appendChild($detailColor)
   $colorStyle.appendChild($detailStyle)
 
+  var $checkButtons = document.createElement('div')
+  $checkButtons.classList.add('check-buttons')
+
   var $continueShopping = document.createElement('button')
-  $continueShopping.classList.add('btn', 'md', 'atc')
+  $continueShopping.classList.add('btn', 'md', 'shop')
   $continueShopping.textContent = ('Continue Shopping')
 
   var $checkout = document.createElement('button')
   $checkout.classList.add('btn', 'md', 'atc')
-  $checkout.textContent = ('Continue Shopping')
+  $checkout.textContent = ('Checkout')
 
-  $detailDetail.appendChild($continueShopping)
-  $detailDetail.appendChild($checkout)
+  $detailDetail2.appendChild($checkButtons)
+  $checkButtons.appendChild($continueShopping)
+  $checkButtons.appendChild($checkout)
 
-  return $detailWrapper
+  $detailWrapper2.addEventListener('click', function (e) {
+    if (e.target.classList.contains('shop') === false) {
+      return
+    }
+    var $staticContent = document.querySelector('.static-content')
+    var $shoppingCart = document.querySelector('#shopping-cart')
+    $staticContent.classList.remove('hidden')
+    $detailWrapper2.classList.add('hidden')
+    clickDetailDisplay.classList.add('hidden')
+    $carouselOut.classList.add('hidden')
+    $carouselTagOut.classList.add('hidden')
+
+    $shoppingCart.classList.add('hidden')
+  })
+
+  return $detailWrapper2
 }

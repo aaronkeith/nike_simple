@@ -566,6 +566,8 @@ clickStaticRun.addEventListener('click', function () {
   var $gallery = document.querySelector('.gallery-main')
   $gallery.classList.remove('hidden')
   $gallery.innerHTML = ''
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
@@ -578,6 +580,8 @@ clickRunT.addEventListener('click', function () {
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
   $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
@@ -590,6 +594,8 @@ clickStaticSkate.addEventListener('click', function () {
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
   $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
@@ -602,6 +608,8 @@ clickSkateT.addEventListener('click', function () {
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
   $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
 })
@@ -614,6 +622,8 @@ clickStaticBall.addEventListener('click', function () {
   var $gallery = document.querySelector('.gallery-main')
   $gallery.innerHTML = ''
   $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
@@ -625,6 +635,8 @@ clickBallT.addEventListener('click', function () {
 
   var $gallery = document.querySelector('.gallery-main')
   $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
@@ -757,9 +769,7 @@ clickDetailDisplay.addEventListener('click', function (e) {
   var detailRender = renderDetailView(shoe)
 
   var $detailView = document.querySelector('#detail-view')
-  // $detailView.innerHTML = ''
   $detailView.classList.remove('hidden')
-  // $detailDropdown.classList.remove('hidden')
   clickDetailDisplay.classList.add('hidden')
   $carouselOut.classList.add('hidden')
   $carouselTagOut.classList.add('hidden')
@@ -856,7 +866,7 @@ function renderDetailView(shoe) {
   $sizeDrop.classList.add('form-control')
   $sizeDrop.classList.add('size-drop')
 
-  var $sizes = [7, 9, 11, 13]
+  var $sizes = [6, 7, 8, 9, 10, 11, 12, 13]
   var $sizeDropOptions1 = document.createElement('option')
   $sizeDropOptions1.classList.add('size')
   $sizeDropOptions1.textContent = $sizes[0]
@@ -869,6 +879,18 @@ function renderDetailView(shoe) {
   var $sizeDropOptions4 = document.createElement('option')
   $sizeDropOptions4.classList.add('size')
   $sizeDropOptions4.textContent = $sizes[3]
+  var $sizeDropOptions5 = document.createElement('option')
+  $sizeDropOptions5.classList.add('size')
+  $sizeDropOptions5.textContent = $sizes[4]
+  var $sizeDropOptions6 = document.createElement('option')
+  $sizeDropOptions6.classList.add('size')
+  $sizeDropOptions6.textContent = $sizes[5]
+  var $sizeDropOptions7 = document.createElement('option')
+  $sizeDropOptions7.classList.add('size')
+  $sizeDropOptions7.textContent = $sizes[6]
+  var $sizeDropOptions8 = document.createElement('option')
+  $sizeDropOptions8.classList.add('size')
+  $sizeDropOptions8.textContent = $sizes[7]
 
   $detailDetail.appendChild($detailSelect)
   $detailSelect.appendChild($qtyChart)
@@ -880,6 +902,10 @@ function renderDetailView(shoe) {
   $sizeDrop.appendChild($sizeDropOptions2)
   $sizeDrop.appendChild($sizeDropOptions3)
   $sizeDrop.appendChild($sizeDropOptions4)
+  $sizeDrop.appendChild($sizeDropOptions5)
+  $sizeDrop.appendChild($sizeDropOptions6)
+  $sizeDrop.appendChild($sizeDropOptions7)
+  $sizeDrop.appendChild($sizeDropOptions8)
 
   var $liQtyAmt = document.createElement('li')
   $liQtyAmt.classList.add('qty-amt')
@@ -920,6 +946,15 @@ function renderDetailView(shoe) {
   $addToCart.textContent = ('Add To Cart')
 
   $detailDetail.appendChild($addToCart)
+
+  // TODO:
+  // var $chooseSize = document.querySelector('.size-drop')
+  // var $chooseSizeValue = $chooseSize.value
+  // var $chooseQty = document.querySelector('.size-drop')
+  // var $chooseQtyValue = $chooseQty.value
+  // console.log($chooseQtyValue)
+  // console.log($chooseSizeValue)
+  //
 
   $detailWrapper.addEventListener('click', function (e) {
     if (e.target.classList.contains('atc') === false) {
@@ -1021,7 +1056,7 @@ function renderShoppingCart(shoe) {
 
   var $continueShopping = document.createElement('button')
   $continueShopping.classList.add('btn', 'md', 'shop')
-  $continueShopping.textContent = ('Continue Shopping')
+  $continueShopping.textContent = ('Keep Shopping')
 
   var $checkout = document.createElement('button')
   $checkout.classList.add('btn', 'md', 'atc')

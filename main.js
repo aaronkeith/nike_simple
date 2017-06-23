@@ -941,9 +941,6 @@ function renderDetailView(shoe) {
   return $detailWrapper
 }
 
-
-
-
 function renderShoppingCart(shoe) {
   var $detailWrapper = document.createElement('div')
   $detailWrapper.classList.add('detail-wrapper')

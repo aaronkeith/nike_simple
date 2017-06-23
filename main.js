@@ -920,5 +920,101 @@ function renderDetailView(shoe) {
 
   $detailDetail.appendChild($addToCart)
 
+  $detailWrapper.addEventListener('click', function (e) {
+    if (e.target.classList.contains('shoe-thumb') === false) {
+      return
+    }
+    var styleId = e.target.getAttribute('data-id')
+
+    var shoe = matchShoeId(styleId, shoeInventory)
+
+    var cartRender = renderShoppingCart(shoe)
+
+    var $shoppingCart = document.querySelector('#shopping-cart')
+    $detailView.classList.add('hidden')
+    clickDetailDisplay.classList.add('hidden')
+    $carouselOut.classList.add('hidden')
+    $carouselTagOut.classList.add('hidden')
+    $shoppingCart.appendChild(cartRender)
+  })
+
+  return $detailWrapper
+}
+
+
+
+
+function renderShoppingCart(shoe) {
+  var $detailWrapper = document.createElement('div')
+  $detailWrapper.classList.add('detail-wrapper')
+
+  var $detailView = document.createElement('div')
+  $detailView.classList.add('detail-image')
+  $detailView.classList.add('col-md-6')
+  $detailView.classList.add('col-sm-6')
+  $detailView.classList.add('col-xs-12')
+
+  var $detailImage = document.createElement('img')
+  $detailImage.classList.add('img-responsive', 'detail-main-img')
+  $detailImage.setAttribute('data-id', shoe.styleNumber)
+  $detailImage.setAttribute('src', shoe.shoeImage)
+
+  $detailWrapper.appendChild($detailView)
+  $detailView.appendChild($detailImage)
+
+  var $detailDetail = document.createElement('div')
+  $detailDetail.classList.add('detail-detail')
+  $detailDetail.classList.add('col-md-6')
+  $detailDetail.classList.add('col-sm-6')
+  $detailDetail.classList.add('col-xs-12')
+
+  $detailWrapper.appendChild($detailDetail)
+
+  var $detailHeader = document.createElement('h3')
+  $detailHeader.classList.add('detail-header')
+  $detailHeader.textContent = (shoe.style)
+
+  var $detailCategory = document.createElement('h4')
+  $detailCategory.classList.add('detail-category')
+  $detailCategory.textContent = (shoe.category)
+
+  var $detailPrice = document.createElement('div')
+  $detailPrice.classList.add('detail-price')
+
+  var $detailPriceSpan = document.createElement('div')
+  $detailPriceSpan.classList.add('detail-price-display')
+  $detailPriceSpan.textContent = ('$' + shoe.price)
+
+  $detailDetail.appendChild($detailHeader)
+  $detailDetail.appendChild($detailCategory)
+  $detailDetail.appendChild($detailPrice)
+  $detailPrice.appendChild($detailPriceSpan)
+
+  var $colorStyle = document.createElement('div')
+  $colorStyle.classList.add('color-style')
+
+  var $detailColor = document.createElement('div')
+  $detailColor.classList.add('detail-color')
+  $detailColor.textContent = ('Color: ' + shoe.color)
+
+  var $detailStyle = document.createElement('div')
+  $detailStyle.classList.add('detail-style')
+  $detailStyle.textContent = ('Style Number: ' + shoe.styleNumber)
+
+  $detailDetail.appendChild($colorStyle)
+  $colorStyle.appendChild($detailColor)
+  $colorStyle.appendChild($detailStyle)
+
+  var $continueShopping = document.createElement('button')
+  $continueShopping.classList.add('btn', 'md', 'atc')
+  $continueShopping.textContent = ('Continue Shopping')
+
+  var $checkout = document.createElement('button')
+  $checkout.classList.add('btn', 'md', 'atc')
+  $checkout.textContent = ('Continue Shopping')
+
+  $detailDetail.appendChild($continueShopping)
+  $detailDetail.appendChild($checkout)
+
   return $detailWrapper
 }

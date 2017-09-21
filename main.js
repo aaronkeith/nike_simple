@@ -558,6 +558,20 @@ function extractByCategory(category, shoes) {
   return categoryMatch
 }
 
+var clickCarouselRun = document.querySelector('#slide1')
+clickCarouselRun.addEventListener('click', function () {
+
+  var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.classList.remove('hidden')
+  $gallery.innerHTML = ''
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
+})
+
 var clickStaticRun = document.querySelector('#static-run')
 clickStaticRun.addEventListener('click', function () {
 
@@ -586,6 +600,20 @@ clickRunT.addEventListener('click', function () {
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
 
+var clickCarouselSkate = document.querySelector('#slide2')
+clickCarouselSkate.addEventListener('click', function () {
+
+  var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.innerHTML = ''
+  $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
+})
+
 var clickStaticSkate = document.querySelector('#static-skate')
 clickStaticSkate.addEventListener('click', function () {
 
@@ -612,6 +640,20 @@ clickSkateT.addEventListener('click', function () {
   $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
+})
+
+var clickCarouselBall = document.querySelector('#slide3')
+clickCarouselBall.addEventListener('click', function () {
+
+  var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.innerHTML = ''
+  $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
 
 var clickStaticBall = document.querySelector('#static-ball')

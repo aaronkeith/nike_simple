@@ -55,6 +55,12 @@ body {
   font-weight: 300;
 }
 
+#slide1:hover,
+#slide2:hover,
+#slide3:hover {
+  cursor: pointer;
+}
+
 #static-run,
 #static-skate,
 #static-ball {

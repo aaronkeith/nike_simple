@@ -1121,15 +1121,20 @@ function renderShoppingCart(shoe) {
       return
     }
     var $staticContent = document.querySelector('.static-content')
-    var $shoppingCart = document.querySelector('#shopping-cart')
     $staticContent.classList.remove('hidden')
-    $detailWrapper2.classList.add('hidden')
     clickDetailDisplay.classList.add('hidden')
-    $carouselOut.classList.add('hidden')
-    $carouselTagOut.classList.add('hidden')
 
-    $shoppingCart.classList.add('hidden')
   })
 
   return $detailWrapper2
 }
+
+var $staticCaption = document.querySelector('#static-caption')
+$staticCaption.addEventListener('click', function (e) {
+  if (e.target.classList.contains('shop') === true) {
+    return
+  }
+  var $staticContent = document.querySelector('.static-content')
+  $staticContent.classList.remove('hidden')
+  clickDetailDisplay.classList.add('hidden')
+})

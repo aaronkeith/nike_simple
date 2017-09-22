@@ -149,6 +149,10 @@ body {
   }
 }
 
+#static-caption:hover {
+  cursor: pointer;
+}
+
 .static-content p {
   margin-top: 3px;
   text-align: center;

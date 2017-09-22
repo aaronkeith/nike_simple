@@ -558,6 +558,20 @@ function extractByCategory(category, shoes) {
   return categoryMatch
 }
 
+var clickCarouselRun = document.querySelector('#slide1')
+clickCarouselRun.addEventListener('click', function () {
+
+  var runningShoes = extractByCategory('RUNNING SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.classList.remove('hidden')
+  $gallery.innerHTML = ''
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
+})
+
 var clickStaticRun = document.querySelector('#static-run')
 clickStaticRun.addEventListener('click', function () {
 
@@ -586,6 +600,20 @@ clickRunT.addEventListener('click', function () {
   $gallery.appendChild(renderGallery(runningShoes[0].category, runningShoes.length, runningShoes))
 })
 
+var clickCarouselSkate = document.querySelector('#slide2')
+clickCarouselSkate.addEventListener('click', function () {
+
+  var skateShoes = extractByCategory('SKATE SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.innerHTML = ''
+  $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
+})
+
 var clickStaticSkate = document.querySelector('#static-skate')
 clickStaticSkate.addEventListener('click', function () {
 
@@ -612,6 +640,20 @@ clickSkateT.addEventListener('click', function () {
   $detailView.innerHTML = ''
 
   $gallery.appendChild(renderGallery(skateShoes[0].category, skateShoes.length, skateShoes))
+})
+
+var clickCarouselBall = document.querySelector('#slide3')
+clickCarouselBall.addEventListener('click', function () {
+
+  var ballShoes = extractByCategory('BALL SHOES', shoeInventory)
+
+  var $gallery = document.querySelector('.gallery-main')
+  $gallery.innerHTML = ''
+  $gallery.classList.remove('hidden')
+  var $detailView = document.querySelector('#detail-view')
+  $detailView.innerHTML = ''
+
+  $gallery.appendChild(renderGallery(ballShoes[0].category, ballShoes.length, ballShoes))
 })
 
 var clickStaticBall = document.querySelector('#static-ball')
@@ -947,15 +989,6 @@ function renderDetailView(shoe) {
 
   $detailDetail.appendChild($addToCart)
 
-  // TODO:
-  // var $chooseSize = document.querySelector('.size-drop')
-  // var $chooseSizeValue = $chooseSize.value
-  // var $chooseQty = document.querySelector('.size-drop')
-  // var $chooseQtyValue = $chooseQty.value
-  // console.log($chooseQtyValue)
-  // console.log($chooseSizeValue)
-  //
-
   $detailWrapper.addEventListener('click', function (e) {
     if (e.target.classList.contains('atc') === false) {
       return
@@ -1024,17 +1057,34 @@ function renderShoppingCart(shoe) {
   $detailCategory.classList.add('detail-category')
   $detailCategory.textContent = (shoe.category)
 
+  var qtyDrop = document.querySelector('.form-control.qty-chart')
+  var $detailQty = document.createElement('div')
+  $detailQty.classList.add('detail-qty')
+  $detailQty.textContent = ('Quantity:' + ' ' + ' ' + ' ' + qtyDrop.value)
+
+  var sizeDrop = document.querySelector('.size-drop')
+  var $detailSize = document.createElement('div')
+  $detailSize.classList.add('detail-size')
+  $detailSize.textContent = ('Size:' + ' ' + ' ' + ' ' + sizeDrop.value)
+
   var $detailPrice = document.createElement('div')
   $detailPrice.classList.add('detail-price')
 
   var $detailPriceSpan2 = document.createElement('div')
   $detailPriceSpan2.classList.add('detail-price-display2')
-  $detailPriceSpan2.textContent = ('$' + shoe.price)
+  $detailPriceSpan2.textContent = ('Shoe Price:' + ' ' + ' ' + '$' + shoe.price)
+
+  var $total = document.createElement('div')
+  $total.classList.add('total')
+  $total.textContent = ('Total:' + ' ' + ' ' + '$' + qtyDrop.value * shoe.price)
 
   $detailDetail2.appendChild($detailHeader)
   $detailDetail2.appendChild($detailCategory)
+  $detailDetail2.appendChild($detailQty)
+  $detailDetail2.appendChild($detailSize)
   $detailDetail2.appendChild($detailPrice)
   $detailPrice.appendChild($detailPriceSpan2)
+  $detailDetail2.appendChild($total)
 
   var $colorStyle = document.createElement('div')
   $colorStyle.classList.add('color-style')
